@@ -23,13 +23,13 @@
       --gold-light: #FFF2A8;
       --pure-white: #FFFFFF;
       --christmas-red: #A81B21;
-      --glass-bg: rgba(255, 255, 255, 0.58);
-      --glass-bg-hover: rgba(255, 255, 255, 0.88);
-      --glass-border: rgba(255, 255, 255, 0.85);
-      --glass-border-gold: rgba(255, 230, 120, 0.8);
+      --glass-bg: rgba(255, 255, 255, 0.62);
+      --glass-bg-hover: rgba(255, 255, 255, 0.92);
+      --glass-border: rgba(255, 255, 255, 0.88);
+      --glass-border-gold: rgba(255, 230, 120, 0.85);
       --text-dark: #2B2412;
       --text-muted: #6B6044;
-      --shadow-soft: 0 14px 35px rgba(212, 175, 55, 0.15);
+      --shadow-soft: 0 14px 35px rgba(212, 175, 55, 0.16);
       --shadow-strong: 0 20px 48px rgba(180, 140, 30, 0.25);
       --radius-sm: 14px;
       --radius-md: 22px;
@@ -103,9 +103,9 @@
       max-width: 500px;
       margin: 0 auto;
       min-height: 100vh;
-      background: rgba(255, 255, 255, 0.38);
-      backdrop-filter: blur(16px) saturate(190%);
-      -webkit-backdrop-filter: blur(16px) saturate(190%);
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(18px) saturate(200%);
+      -webkit-backdrop-filter: blur(18px) saturate(200%);
       box-shadow: 0 0 55px rgba(212, 175, 55, 0.2);
       border-left: 1.5px solid rgba(255, 255, 255, 0.9);
       border-right: 1.5px solid rgba(255, 255, 255, 0.9);
@@ -113,12 +113,81 @@
     }
 
     /* =============================================================
+       DAZZLING GLITTER TEXT TYPOGRAPHY (WOW EFFECT)
+    ============================================================== */
+    .glitter-text-gold {
+      background: linear-gradient(
+        90deg,
+        #8C6500 0%,
+        #D4AF37 15%,
+        #FFF8D4 30%,
+        #FFFFFF 45%,
+        #FFF8D4 55%,
+        #F5CD47 70%,
+        #D4AF37 85%,
+        #8C6500 100%
+      );
+      background-size: 250% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: goldTextGlitter 3.5s linear infinite;
+      filter: drop-shadow(0 2px 8px rgba(212, 175, 55, 0.5));
+      display: inline-block;
+    }
+
+    .glitter-text-red {
+      background: linear-gradient(
+        90deg,
+        #7A090E 0%,
+        #B8252A 18%,
+        #FFA8AC 32%,
+        #FFFFFF 45%,
+        #FFA8AC 58%,
+        #D32027 75%,
+        #7A090E 100%
+      );
+      background-size: 250% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: redTextGlitter 3.5s linear infinite;
+      filter: drop-shadow(0 2px 8px rgba(184, 37, 42, 0.4));
+      display: inline-block;
+    }
+
+    @keyframes goldTextGlitter {
+      0% { background-position: 250% 0; }
+      100% { background-position: -250% 0; }
+    }
+    @keyframes redTextGlitter {
+      0% { background-position: 250% 0; }
+      100% { background-position: -250% 0; }
+    }
+
+    /* Little Sparkle Stars Twinkling next to Words */
+    .glitter-sparkle {
+      display: inline-block;
+      color: #D4AF37;
+      font-size: 1.05rem;
+      filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.9));
+      animation: sparkleTwinkle 2.2s infinite alternate ease-in-out;
+      vertical-align: middle;
+    }
+    .glitter-sparkle.delayed {
+      animation-delay: -1.1s;
+    }
+
+    @keyframes sparkleTwinkle {
+      0%, 100% { transform: scale(0.8) rotate(0deg); opacity: 0.5; filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.5)); }
+      50% { transform: scale(1.35) rotate(90deg); opacity: 1; filter: drop-shadow(0 0 14px rgba(255, 235, 120, 1)); }
+    }
+
+    /* =============================================================
        ULTRA-LUXURY GLASSMORPHISM CARD WITH GLITTER SHEEN
     ============================================================== */
     .glass-card {
       background: var(--glass-bg);
-      backdrop-filter: blur(22px) saturate(200%);
-      -webkit-backdrop-filter: blur(22px) saturate(200%);
+      backdrop-filter: blur(24px) saturate(200%);
+      -webkit-backdrop-filter: blur(24px) saturate(200%);
       border: 1.5px solid var(--glass-border);
       border-radius: var(--radius-md);
       box-shadow: 0 16px 38px rgba(212, 175, 55, 0.16), 
@@ -130,7 +199,6 @@
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    /* Golden glass top edge accent */
     .glass-card::before {
       content: '';
       position: absolute;
@@ -141,7 +209,6 @@
       background: linear-gradient(90deg, transparent, #FFE885, #D4AF37, #FFF5B8, transparent);
       z-index: 3;
     }
-    /* Shimmering glass light sweep reflection */
     .glass-card::after {
       content: '';
       position: absolute;
@@ -153,7 +220,7 @@
         105deg,
         transparent 40%,
         rgba(255, 255, 255, 0.18) 46%,
-        rgba(255, 245, 180, 0.38) 50%,
+        rgba(255, 245, 180, 0.42) 50%,
         rgba(255, 255, 255, 0.18) 54%,
         transparent 60%
       );
@@ -166,23 +233,6 @@
     @keyframes glassShimmerSweep {
       0% { transform: translateY(-130%) rotate(25deg); }
       32%, 100% { transform: translateY(130%) rotate(25deg); }
-    }
-
-    /* Sparkling Glitter Icon Animation */
-    .glitter-sparkle {
-      display: inline-block;
-      color: #D4AF37;
-      font-size: 1rem;
-      filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.85));
-      animation: sparkleTwinkle 2.5s infinite alternate ease-in-out;
-    }
-    .glitter-sparkle.delayed {
-      animation-delay: -1.25s;
-    }
-
-    @keyframes sparkleTwinkle {
-      0%, 100% { transform: scale(0.85) rotate(0deg); opacity: 0.6; filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.5)); }
-      50% { transform: scale(1.3) rotate(90deg); opacity: 1; filter: drop-shadow(0 0 12px rgba(255, 235, 120, 1)); }
     }
 
     /* Typography */
@@ -392,16 +442,13 @@
     .gate-title-script {
       font-family: 'Great Vibes', cursive;
       font-size: 2.3rem;
-      color: #9C1F24;
       line-height: 1.1;
       margin-bottom: 2px;
-      filter: drop-shadow(0 2px 4px rgba(184, 37, 42, 0.15));
     }
     .gate-church-name {
       font-family: 'Cinzel', serif;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-weight: 800;
-      color: #2D2411;
       letter-spacing: 1px;
       margin-bottom: 12px;
     }
@@ -433,7 +480,6 @@
     .recipient-name {
       font-family: 'Great Vibes', cursive;
       font-size: 2.2rem;
-      color: #8C6500;
       line-height: 1.2;
       word-break: break-word;
     }
@@ -588,16 +634,14 @@
     }
     .header-title-script {
       font-family: 'Great Vibes', cursive;
-      font-size: 2.6rem;
-      color: #A31E23;
+      font-size: 2.7rem;
       line-height: 1.1;
       margin-bottom: 2px;
     }
     .header-title {
       font-family: 'Cinzel', serif;
-      font-size: 1.45rem;
+      font-size: 1.5rem;
       font-weight: 900;
-      color: #2D2510;
       line-height: 1.3;
       margin-bottom: 12px;
     }
@@ -636,9 +680,8 @@
     }
     .theme-quote {
       font-family: 'Cinzel', serif;
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       font-weight: 800;
-      color: #332707;
       margin: 4px 0 14px;
     }
     .subtheme-box {
@@ -814,7 +857,6 @@
     .section-title {
       font-family: 'Cinzel', serif;
       font-size: 1.45rem;
-      color: #2B230B;
       font-weight: 800;
       margin-top: 4px;
     }
@@ -943,10 +985,8 @@
     .gallery-title-script {
       font-family: 'Great Vibes', cursive;
       font-size: 3rem;
-      color: #9E1F24;
       line-height: 1;
       margin-bottom: 2px;
-      filter: drop-shadow(0 2px 5px rgba(184, 37, 42, 0.15));
     }
     
     /* Continuous Marquee Carousel Moving to the Right */
@@ -1366,12 +1406,10 @@
               <stop offset="100%" stop-color="#D4AF37"/>
             </linearGradient>
           </defs>
-          <!-- Gelombang Lengkungan Rumbai Emas -->
           <path d="M 0,0 Q 65,30 130,4 Q 200,32 270,4 Q 335,30 400,0" fill="none" stroke="url(#rumbaiGoldGrad)" stroke-width="4" stroke-linecap="round"/>
           <path d="M 0,4 Q 65,34 130,8 Q 200,36 270,8 Q 335,34 400,4" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
         </svg>
 
-        <!-- Untaian Rumbai-Rumbai Gantung Berayun -->
         <div class="rumbai-tassels-row">
           <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
           <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
@@ -1405,10 +1443,15 @@
         <img src="gallery/bg awal.jpeg" class="gate-arch-img" alt="Natal HKBP Efrata Driyorejo 2026">
       </div>
 
+      <!-- Dazzling Glitter Titles -->
       <div class="gate-title-script">
-        <span class="glitter-sparkle">✦</span> Natal Remaja - Naposobulung <span class="glitter-sparkle delayed">✦</span>
+        <span class="glitter-sparkle">✦</span> 
+        <span class="glitter-text-red">Natal Remaja - Naposobulung</span> 
+        <span class="glitter-sparkle delayed">✦</span>
       </div>
-      <div class="gate-church-name">HKBP EFRATA DRIYOREJO 2026</div>
+      <div class="gate-church-name">
+        <span class="glitter-text-gold">HKBP EFRATA DRIYOREJO 2026</span>
+      </div>
 
       <p class="gate-respectful-note">
         Tanpa Mengurangi Rasa Hormat, Kami Mengundang Bapak/Ibu/Saudara/i untuk Hadir di Acara Kami :
@@ -1416,7 +1459,9 @@
 
       <div class="recipient-box">
         <div class="recipient-label">Kepada :</div>
-        <div id="display-recipient" class="recipient-name">Tamu Terkasih</div>
+        <div id="display-recipient" class="recipient-name">
+          <span class="glitter-text-gold">Tamu Terkasih</span>
+        </div>
       </div>
 
       <button id="btn-open" class="btn-open-invitation">
@@ -1453,8 +1498,8 @@
         <div style="font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; color: #8A6907; font-weight: 700;">
           <span class="glitter-sparkle">✦</span> SELAMAT MENYAMBUT NATAL 2026 <span class="glitter-sparkle delayed">✦</span>
         </div>
-        <div class="script-font" style="font-size: 2.2rem; color: #9E1F24; margin: 4px 0;">
-          Terang di Tengah Kegelapan
+        <div class="script-font" style="font-size: 2.3rem; margin: 4px 0;">
+          <span class="glitter-text-red">Terang di Tengah Kegelapan</span>
         </div>
         <p style="font-size: 0.85rem; color: #574B2A; line-height: 1.5; margin-bottom: 16px;">
           <i>"Terang itu bercahaya di dalam kegelapan dan kegelapan itu tidak menguasainya."</i><br>
@@ -1501,10 +1546,12 @@
       </div>
       <div class="header-church">HKBP EFRATA DRIYOREJO</div>
       <div class="header-title-script">
-        <span class="glitter-sparkle">✦</span> Perayaan Natal <span class="glitter-sparkle delayed">✦</span>
+        <span class="glitter-sparkle">✦</span> 
+        <span class="glitter-text-red">Perayaan Natal</span> 
+        <span class="glitter-sparkle delayed">✦</span>
       </div>
       <h1 class="header-title">
-        REMAJA - NAPOSOBULUNG<br>TAHUN 2026
+        <span class="glitter-text-gold">REMAJA - NAPOSOBULUNG<br>TAHUN 2026</span>
       </h1>
       <div class="header-badge">
         <i class="fa-regular fa-calendar-check" style="margin-right: 6px;"></i> Minggu, 20 Desember 2026
@@ -1525,9 +1572,9 @@
 
         <div style="height: 1px; background: linear-gradient(90deg, transparent, var(--butter-yellow-dark), transparent); margin: 14px 0;"></div>
 
-        <div class="theme-label">TEMA</div>
+        <div class="theme-label"><span class="glitter-sparkle">✦</span> TEMA <span class="glitter-sparkle delayed">✦</span></div>
         <div class="theme-quote">
-          "Terang di Tengah Kegelapan."
+          <span class="glitter-text-gold">"Terang di Tengah Kegelapan."</span>
         </div>
 
         <div class="subtheme-box">
@@ -1544,7 +1591,7 @@
       <section class="glass-card">
         <div class="section-header" style="margin-bottom: 10px;">
           <div class="section-subtitle"><span class="glitter-sparkle">✦</span> MENUJU HARI BAHAGIA <span class="glitter-sparkle delayed">✦</span></div>
-          <h3 class="section-title" style="font-size: 1.25rem;">Hitung Mundur Acara</h3>
+          <h3 class="section-title" style="font-size: 1.25rem;"><span class="glitter-text-gold">Hitung Mundur Acara</span></h3>
           <div class="section-divider"></div>
         </div>
 
@@ -1571,8 +1618,8 @@
       <!-- WAKTU & TEMPAT -->
       <section id="lokasi-section" class="glass-card">
         <div class="section-header">
-          <div class="section-subtitle">WAKTU & TEMPAT</div>
-          <h3 class="section-title">Pelaksanaan Ibadah</h3>
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> WAKTU & TEMPAT <span class="glitter-sparkle delayed">✦</span></div>
+          <h3 class="section-title"><span class="glitter-text-gold">Pelaksanaan Ibadah</span></h3>
           <div class="section-divider"></div>
         </div>
 
@@ -1622,8 +1669,8 @@
       <!-- BENTUK KEGIATAN -->
       <section class="glass-card">
         <div class="section-header">
-          <div class="section-subtitle">RUNDOWN & ACARA</div>
-          <h3 class="section-title">Bentuk Kegiatan</h3>
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> RUNDOWN & ACARA <span class="glitter-sparkle delayed">✦</span></div>
+          <h3 class="section-title"><span class="glitter-text-gold">Bentuk Kegiatan</span></h3>
           <div class="section-divider"></div>
         </div>
 
@@ -1650,7 +1697,7 @@
       </section>
 
       <!-- =========================================================
-           SUSUNAN PANITIA (DENGAN FOTO ASLI DI SEMUA KARTU!)
+           SUSUNAN PANITIA (DENGAN PEMBINA & PEMBIMBING NAPOSO)
       ========================================================== -->
       <section id="panitia-section" class="glass-card">
         <!-- Hiasan Rumbai-Rumbai Natal Kartu Panitia -->
@@ -1669,14 +1716,14 @@
 
         <div class="section-header" style="margin-top: 14px;">
           <div class="section-subtitle"><span class="glitter-sparkle">✦</span> STRUKTUR ORGANISASI <span class="glitter-sparkle delayed">✦</span></div>
-          <h3 class="section-title">Susunan Panitia Natal 2026</h3>
+          <h3 class="section-title"><span class="glitter-text-gold">Susunan Panitia Natal 2026</span></h3>
           <div class="section-divider"></div>
           <p style="font-size: 0.8rem; color: #7D6B42; margin-top: 8px;">
             <i class="fa-solid fa-play" style="margin-right: 4px; color: #A81B21;"></i> Ketuk kartu untuk menonton animasi video slide
           </p>
         </div>
 
-        <!-- 1. PEMBINA (2 ORANG: Pdt & St. R Sihombing) -->
+        <!-- 1. PEMBINA (Pdt & Inang St Dewan Koinonia) -->
         <div class="panitia-tier-title"><i class="fa-solid fa-cross"></i> Pembina</div>
         <div class="panitia-grid-2">
           <div class="panitia-card featured" onclick="openMediaModal('Pdt. Jhon Rikardo Klamer Siregar, S.Th', 'Pembina (Pendeta HKBP Ressort Diaspora Surabaya)', 'Slide Individu/PEMBINA/JHON.jpeg', 'image')">
@@ -1689,18 +1736,32 @@
             <div style="font-size: 0.7rem; color: #6E613F; margin-top: 2px;">Pendeta HKBP Ressort Diaspora Surabaya</div>
           </div>
 
-          <div class="panitia-card featured" onclick="openMediaModal('St. R. Sihombing', 'Pembina (Parhalado HKBP Efrata Driyorejo)', 'Slide Individu/PEMBINA/St. R Sihombing.jpeg', 'image')">
+          <div class="panitia-card featured" onclick="openMediaModal('St. R. Sihombing', 'Pembina (Inang St Dewan Koinonia)', 'Slide Individu/PEMBINA/St. R Sihombing.jpeg', 'image')">
             <div class="panitia-avatar-wrapper">
               <img src="Slide Individu/PEMBINA/St. R Sihombing.jpeg" class="panitia-media" alt="St. R. Sihombing">
               <span class="panitia-zoom-badge"><i class="fa-solid fa-magnifying-glass"></i></span>
             </div>
             <div class="panitia-role">Pembina</div>
             <div class="panitia-name">St. R. Sihombing</div>
-            <div style="font-size: 0.7rem; color: #6E613F; margin-top: 2px;">Parhalado HKBP Efrata Driyorejo</div>
+            <div style="font-size: 0.7rem; color: #6E613F; margin-top: 2px;">Inang St Dewan Koinonia</div>
           </div>
         </div>
 
-        <!-- 2. BADAN PENGURUS HARIAN (BPI) -->
+        <!-- 2. PEMBIMBING NAPOSO -->
+        <div class="panitia-tier-title" style="margin-top: 16px;"><i class="fa-solid fa-hands-holding-child"></i> Pembimbing Naposo</div>
+        <div class="panitia-grid-1">
+          <div class="panitia-card featured" onclick="openMediaModal('Cln. Pdt. Carel Hot A. Siburian', 'Pembimbing Naposo HKBP Efrata Driyorejo', 'Slide Individu/PEMBINA/Cln.Pdt. Carel Hot A. Siburian.jpeg', 'image')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/PEMBINA/Cln.Pdt. Carel Hot A. Siburian.jpeg" class="panitia-media" alt="Cln. Pdt. Carel Hot A. Siburian">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="panitia-role">Pembimbing Naposo</div>
+            <div class="panitia-name">Cln. Pdt. Carel Hot A. Siburian</div>
+            <div style="font-size: 0.72rem; color: #6E613F; margin-top: 2px;">HKBP Efrata Driyorejo</div>
+          </div>
+        </div>
+
+        <!-- 3. BADAN PENGURUS HARIAN (BPI) -->
         <div class="panitia-tier-title"><i class="fa-solid fa-crown"></i> Pengurus Inti (BPI)</div>
         <div class="panitia-grid-2">
           <div class="panitia-card featured" onclick="openMediaModal('Rafly Andreas Sitorus', 'Ketua Pelaksana', 'Slide Individu/BPI/RAFLY.mp4', 'video')">
@@ -1740,7 +1801,7 @@
           </div>
         </div>
 
-        <!-- 3. SIE ACARA -->
+        <!-- 4. SIE ACARA -->
         <div class="panitia-tier-title"><i class="fa-solid fa-masks-theater"></i> Sie Acara</div>
         <div class="panitia-grid-1" style="margin-bottom: 10px;">
           <div class="panitia-card" onclick="openMediaModal('Ayu Paune Yuliana Pakpahan', 'Koordinator Sie Acara', 'Slide Individu/ACARA/AYU KOOR.mp4', 'video')">
@@ -1775,7 +1836,7 @@
           </div>
         </div>
 
-        <!-- 4. MUSIK DAN KOOR -->
+        <!-- 5. MUSIK DAN KOOR -->
         <div class="panitia-tier-title"><i class="fa-solid fa-music"></i> Musik dan Koor</div>
         <div class="panitia-grid-1" style="margin-bottom: 10px;">
           <div class="panitia-card" onclick="openMediaModal('Ivana Belinda Pakpahan', 'Koordinator Musik & Koor', 'Slide Individu/MUSIK/IVANA.mp4', 'video')">
@@ -1805,7 +1866,7 @@
           </div>
         </div>
 
-        <!-- 5. PUBLIKASI DEKORASI DAN DOKUMENTASI (PDD) -->
+        <!-- 6. PUBLIKASI DEKORASI DAN DOKUMENTASI (PDD) -->
         <div class="panitia-tier-title"><i class="fa-solid fa-camera-retro"></i> Publikasi Dekorasi & Dokumentasi</div>
         <div class="panitia-grid-1" style="margin-bottom: 10px;">
           <div class="panitia-card" onclick="openMediaModal('Jonathan Sormin', 'Koordinator PDD', 'Slide Individu/PDD/JONATHAN.mp4', 'video')">
@@ -1835,7 +1896,7 @@
           </div>
         </div>
 
-        <!-- 6. PERLENGKAPAN -->
+        <!-- 7. PERLENGKAPAN -->
         <div class="panitia-tier-title"><i class="fa-solid fa-toolbox"></i> Perlengkapan</div>
         <div class="panitia-grid-1" style="margin-bottom: 10px;">
           <div class="panitia-card" onclick="openMediaModal('Gunawan Pasaribu', 'Koordinator Perlengkapan', 'Slide Individu/PERKAP/GUNAWAN.mp4', 'video')">
@@ -1870,7 +1931,7 @@
           </div>
         </div>
 
-        <!-- 7. DANA DAN USAHA -->
+        <!-- 8. DANA DAN USAHA -->
         <div class="panitia-tier-title"><i class="fa-solid fa-coins"></i> Dana dan Usaha</div>
         <div class="panitia-grid-1" style="margin-bottom: 10px;">
           <div class="panitia-card" onclick="openMediaModal('Karlam Sinaga', 'Koordinator Dana & Usaha', 'Slide Individu/DANUS/KARL,AM.mp4', 'video')">
@@ -1900,7 +1961,7 @@
           </div>
         </div>
 
-        <!-- 8. KONSUMSI (Brykson Lumbanraja satu-satunya di sini) -->
+        <!-- 9. KONSUMSI (Brykson Lumbanraja satu-satunya di sini) -->
         <div class="panitia-tier-title"><i class="fa-solid fa-utensils"></i> Konsumsi</div>
         <div class="panitia-grid-1" style="margin-bottom: 10px;">
           <div class="panitia-card" onclick="openMediaModal('Brykson Lumbanraja', 'Koordinator Konsumsi', 'Slide Individu/KONSUM/BRYKSON.mp4', 'video')">
@@ -1930,7 +1991,7 @@
           </div>
         </div>
 
-        <!-- 9. HUMAS -->
+        <!-- 10. HUMAS -->
         <div class="panitia-tier-title"><i class="fa-solid fa-bullhorn"></i> Hubungan Masyarakat (Humas)</div>
         <div class="panitia-grid-1" style="margin-bottom: 10px;">
           <div class="panitia-card" onclick="openMediaModal('Buena Viki Sirait', 'Koordinator Humas', 'Slide Individu/HUMAS/VICKY.mp4', 'video')">
@@ -1983,9 +2044,11 @@
 
         <div class="section-header" style="margin-top: 10px;">
           <div class="gallery-title-script">
-            <span class="glitter-sparkle">✦</span> Our Gallery <span class="glitter-sparkle delayed">✦</span>
+            <span class="glitter-sparkle">✦</span> 
+            <span class="glitter-text-red">Our Gallery</span> 
+            <span class="glitter-sparkle delayed">✦</span>
           </div>
-          <div class="section-subtitle">DOKUMENTASI ANIMASI PANITIA</div>
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> DOKUMENTASI ANIMASI PANITIA <span class="glitter-sparkle delayed">✦</span></div>
           <div class="section-divider"></div>
           <p style="font-size: 0.8rem; color: #736442; margin-top: 6px;">
             Animasi slide seluruh panitia bergerak terus ke kanan &bull; Ketuk untuk menonton
@@ -2006,7 +2069,7 @@
       <section id="pesan-section" class="glass-card">
         <div class="section-header">
           <div class="section-subtitle"><span class="glitter-sparkle">✦</span> DOA & HARAPAN <span class="glitter-sparkle delayed">✦</span></div>
-          <h3 class="section-title">Kesan, Pesan & Doa</h3>
+          <h3 class="section-title"><span class="glitter-text-gold">Kesan, Pesan & Doa</span></h3>
           <div class="section-divider"></div>
           <p style="font-size: 0.82rem; color: #6E613F; margin-top: 6px;">
             Sampaikan kata-kata mutiara, doa, maupun harapan Anda untuk Natal Remaja-Naposobulung HKBP Efrata Driyorejo 2026.
@@ -2040,8 +2103,8 @@
       ========================================================== -->
       <section class="glass-card">
         <div class="section-header">
-          <div class="section-subtitle">KONFIRMASI KEHADIRAN</div>
-          <h3 class="section-title">RSVP Tamu Undangan</h3>
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> KONFIRMASI KEHADIRAN <span class="glitter-sparkle delayed">✦</span></div>
+          <h3 class="section-title"><span class="glitter-text-gold">RSVP Tamu Undangan</span></h3>
           <div class="section-divider"></div>
         </div>
 
@@ -2077,14 +2140,14 @@
       <section class="glass-card" style="text-align: center;">
         <div class="section-header">
           <div class="section-subtitle"><span class="glitter-sparkle">✦</span> KASIH KARUNIA ALLAH MENYERTAI KITA <span class="glitter-sparkle delayed">✦</span></div>
-          <h3 class="section-title">Sampai Jumpa di Perayaan Natal</h3>
+          <h3 class="section-title"><span class="glitter-text-gold">Sampai Jumpa di Perayaan Natal</span></h3>
           <div class="section-divider"></div>
         </div>
         <p style="font-size: 0.88rem; color: #574B2A; line-height: 1.6; margin-bottom: 16px;">
           Kehadiran dan doa restu Saudara/i sekalian merupakan kehormatan serta sukacita yang besar bagi kami seluruh Panitia & Remaja-Naposobulung HKBP Efrata Driyorejo.
         </p>
-        <div class="script-font" style="font-size: 2.2rem; font-weight: 700; color: #8C6500;">
-          Tuhan Yesus Memberkati Kita Semua
+        <div class="script-font" style="font-size: 2.3rem; font-weight: 700;">
+          <span class="glitter-text-gold">Tuhan Yesus Memberkati Kita Semua</span>
         </div>
       </section>
 
@@ -2170,7 +2233,8 @@
     }
 
     const recipientName = getRecipientName();
-    document.getElementById('display-recipient').textContent = recipientName;
+    const recipientSpan = document.querySelector('#display-recipient .glitter-text-gold') || document.getElementById('display-recipient');
+    recipientSpan.textContent = recipientName;
 
     /* 2. AUDIO & GATE INTERACTION */
     const audio = document.getElementById('audio-backsound');
@@ -2229,7 +2293,7 @@
 
     /* 3. GENERATE LUXURY GOLDEN AVATARS FOR FALLBACKS */
     function createAvatarSVG(name, gender) {
-      const words = name.trim().split(' ').filter(w => !['S.Th', 'St.', 'M'].includes(w));
+      const words = name.trim().split(' ').filter(w => !['S.Th', 'St.', 'M', 'Cln.Pdt.', 'Cln.'].includes(w));
       const initials = (words[0] ? words[0][0] : 'N') + (words[1] ? words[1][0] : 'P');
       
       const maleGradient = ['#FFE885', '#F5CD47', '#C69200'];
@@ -2259,10 +2323,11 @@
       img.src = createAvatarSVG(name, gender);
     });
 
-    /* 4. COMMITTEE DATA LIST (DENGAN FOTO ASLI SETIAP PERSONEL!) */
+    /* 4. COMMITTEE DATA LIST (DENGAN PEMBINA & PEMBIMBING NAPOSO) */
     const committeeList = [
       { name: "Pdt. Jhon Rikardo Klamer Siregar, S.Th", role: "Pembina", img: "Slide Individu/PEMBINA/JHON.jpeg", video: "", type: "image", gender: "male" },
-      { name: "St. R. Sihombing", role: "Pembina", img: "Slide Individu/PEMBINA/St. R Sihombing.jpeg", video: "", type: "image", gender: "male" },
+      { name: "St. R. Sihombing", role: "Inang St Dewan Koinonia", img: "Slide Individu/PEMBINA/St. R Sihombing.jpeg", video: "", type: "image", gender: "female" },
+      { name: "Cln. Pdt. Carel Hot A. Siburian", role: "Pembimbing Naposo", img: "Slide Individu/PEMBINA/Cln.Pdt. Carel Hot A. Siburian.jpeg", video: "", type: "image", gender: "male" },
       { name: "Rafly Andreas Sitorus", role: "Ketua Pelaksana", img: "Slide Individu/BPI/RAFLY.jpg", video: "Slide Individu/BPI/RAFLY.mp4", type: "video", gender: "male" },
       { name: "Salomo Fransiskus Pakpahan", role: "Wakil Pelaksana", img: "Slide Individu/BPI/SALOMO.jpg", video: "Slide Individu/BPI/SALOMO.mp4", type: "video", gender: "male" },
       { name: "Dyna Evadyllya Panjaitan", role: "Sekretaris", img: "Slide Individu/BPI/DYNA.jpg", video: "Slide Individu/BPI/DYNA.mp4", type: "video", gender: "female" },
@@ -2419,9 +2484,14 @@
         time: "1 jam yang lalu"
       },
       {
+        sender: "Cln. Pdt. Carel Hot A. Siburian",
+        message: "Biarlah terang Kristus senantiasa menuntun Remaja dan Naposo untuk terus bertumbuh dalam iman dan kasih persaudaraan.",
+        time: "2 jam yang lalu"
+      },
+      {
         sender: "Panitia Pelaksana & park pha Ahn.Group",
         message: "Kami menantikan kehadiran rekan-rekan dan saudara-saudari terkasih. Mari kita bersama memuliakan nama Tuhan dalam sukacita Natal!",
-        time: "2 jam yang lalu"
+        time: "3 jam yang lalu"
       }
     ];
 
@@ -2508,11 +2578,10 @@
         speedX: (Math.random() - 0.5) * 0.45,
         alpha: Math.random() * 0.7 + 0.3,
         pulseSpeed: Math.random() * 0.035 + 0.015,
-        type: Math.random() > 0.45 ? 'star' : 'snow' // mix of diamond stars and golden snow
+        type: Math.random() > 0.45 ? 'star' : 'snow'
       });
     }
 
-    // Helper: Draw 4-point diamond sparkle star
     function drawSparkleStar(ctx, cx, cy, spikes, outerRadius, innerRadius, color, alpha) {
       let rot = Math.PI / 2 * 3;
       let x = cx;
@@ -2562,10 +2631,8 @@
         const currentAlpha = Math.max(0.12, Math.min(0.95, p.alpha));
 
         if (p.type === 'star') {
-          // 4-point diamond star sparkle
           drawSparkleStar(ctx, p.x, p.y, 4, p.size * 2.4, p.size * 0.5, p.color, currentAlpha);
         } else {
-          // Circular snow / golden dust particle
           ctx.save();
           ctx.globalAlpha = currentAlpha;
           ctx.fillStyle = p.color;
