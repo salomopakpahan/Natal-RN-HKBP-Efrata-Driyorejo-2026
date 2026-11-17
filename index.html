@@ -1,0 +1,2653 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Undangan Natal Remaja - Naposobulung HKBP Efrata Driyorejo 2026</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      /* Palette: Baby Yellow, Butter Yellow, Pure White & Festive Accents */
+      --baby-yellow: #FFFBE6;
+      --baby-yellow-light: #FFFEF7;
+      --butter-yellow: #FFE885;
+      --butter-yellow-dark: #F5CD47;
+      --gold-primary: #D4AF37;
+      --gold-dark: #8C6500;
+      --gold-light: #FFF2A8;
+      --pure-white: #FFFFFF;
+      --christmas-red: #A81B21;
+      --glass-bg: rgba(255, 255, 255, 0.62);
+      --glass-bg-hover: rgba(255, 255, 255, 0.92);
+      --glass-border: rgba(255, 255, 255, 0.88);
+      --glass-border-gold: rgba(255, 230, 120, 0.85);
+      --text-dark: #2B2412;
+      --text-muted: #6B6044;
+      --shadow-soft: 0 14px 35px rgba(212, 175, 55, 0.16);
+      --shadow-strong: 0 20px 48px rgba(180, 140, 30, 0.25);
+      --radius-sm: 14px;
+      --radius-md: 22px;
+      --radius-lg: 32px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-dark);
+      background-color: var(--baby-yellow);
+      background: radial-gradient(circle at 10% 5%, #FFFFFF 0%, #FFFDF0 35%, #FFF8D4 70%, #FFECA0 100%);
+      background-attachment: fixed;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* Floating Particles Canvas */
+    #particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Ambient Festive Glows */
+    .ambient-glow {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(85px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.55;
+      animation: floatGlow 12s infinite alternate ease-in-out;
+    }
+    .glow-1 {
+      width: 400px;
+      height: 400px;
+      background: rgba(255, 232, 133, 0.85);
+      top: -120px;
+      right: -90px;
+    }
+    .glow-2 {
+      width: 440px;
+      height: 440px;
+      background: rgba(255, 245, 180, 0.75);
+      bottom: -100px;
+      left: -120px;
+      animation-delay: -5s;
+    }
+
+    @keyframes floatGlow {
+      0% { transform: translateY(0) scale(1); }
+      100% { transform: translateY(35px) scale(1.12); }
+    }
+
+    /* Main Container (Mobile-first app wrapper) */
+    .app-wrapper {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      min-height: 100vh;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(18px) saturate(200%);
+      -webkit-backdrop-filter: blur(18px) saturate(200%);
+      box-shadow: 0 0 55px rgba(212, 175, 55, 0.2);
+      border-left: 1.5px solid rgba(255, 255, 255, 0.9);
+      border-right: 1.5px solid rgba(255, 255, 255, 0.9);
+      padding-bottom: 95px; /* space for bottom nav bar */
+    }
+
+    /* =============================================================
+       DAZZLING GLITTER TEXT TYPOGRAPHY (WOW EFFECT)
+    ============================================================== */
+    .glitter-text-gold {
+      background: linear-gradient(
+        90deg,
+        #8C6500 0%,
+        #D4AF37 15%,
+        #FFF8D4 30%,
+        #FFFFFF 45%,
+        #FFF8D4 55%,
+        #F5CD47 70%,
+        #D4AF37 85%,
+        #8C6500 100%
+      );
+      background-size: 250% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: goldTextGlitter 3.5s linear infinite;
+      filter: drop-shadow(0 2px 8px rgba(212, 175, 55, 0.5));
+      display: inline-block;
+    }
+
+    .glitter-text-red {
+      background: linear-gradient(
+        90deg,
+        #7A090E 0%,
+        #B8252A 18%,
+        #FFA8AC 32%,
+        #FFFFFF 45%,
+        #FFA8AC 58%,
+        #D32027 75%,
+        #7A090E 100%
+      );
+      background-size: 250% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: redTextGlitter 3.5s linear infinite;
+      filter: drop-shadow(0 2px 8px rgba(184, 37, 42, 0.4));
+      display: inline-block;
+    }
+
+    @keyframes goldTextGlitter {
+      0% { background-position: 250% 0; }
+      100% { background-position: -250% 0; }
+    }
+    @keyframes redTextGlitter {
+      0% { background-position: 250% 0; }
+      100% { background-position: -250% 0; }
+    }
+
+    /* Little Sparkle Stars Twinkling next to Words */
+    .glitter-sparkle {
+      display: inline-block;
+      color: #D4AF37;
+      font-size: 1.05rem;
+      filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.9));
+      animation: sparkleTwinkle 2.2s infinite alternate ease-in-out;
+      vertical-align: middle;
+    }
+    .glitter-sparkle.delayed {
+      animation-delay: -1.1s;
+    }
+
+    @keyframes sparkleTwinkle {
+      0%, 100% { transform: scale(0.8) rotate(0deg); opacity: 0.5; filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.5)); }
+      50% { transform: scale(1.35) rotate(90deg); opacity: 1; filter: drop-shadow(0 0 14px rgba(255, 235, 120, 1)); }
+    }
+
+    /* =============================================================
+       ULTRA-LUXURY GLASSMORPHISM CARD WITH GLITTER SHEEN
+    ============================================================== */
+    .glass-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(24px) saturate(200%);
+      -webkit-backdrop-filter: blur(24px) saturate(200%);
+      border: 1.5px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      box-shadow: 0 16px 38px rgba(212, 175, 55, 0.16), 
+                  inset 0 1.5px 2px rgba(255, 255, 255, 0.95), 
+                  inset 0 -1.5px 2px rgba(255, 235, 140, 0.25);
+      padding: 26px 20px;
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glass-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #FFE885, #D4AF37, #FFF5B8, transparent);
+      z-index: 3;
+    }
+    .glass-card::after {
+      content: '';
+      position: absolute;
+      top: -70%;
+      left: -70%;
+      width: 240%;
+      height: 240%;
+      background: linear-gradient(
+        105deg,
+        transparent 40%,
+        rgba(255, 255, 255, 0.18) 46%,
+        rgba(255, 245, 180, 0.42) 50%,
+        rgba(255, 255, 255, 0.18) 54%,
+        transparent 60%
+      );
+      transform: rotate(25deg);
+      animation: glassShimmerSweep 7s infinite ease-in-out;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    @keyframes glassShimmerSweep {
+      0% { transform: translateY(-130%) rotate(25deg); }
+      32%, 100% { transform: translateY(130%) rotate(25deg); }
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, .cinzel {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.5px;
+    }
+    .script-font {
+      font-family: 'Great Vibes', cursive;
+    }
+    .serif-font {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* =============================================================
+       HIASAN RUMBAI-RUMBAI NATAL & TASSELS (GARLAND SWAGS)
+    ============================================================== */
+    .rumbai-garland-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      pointer-events: none;
+      z-index: 4;
+      overflow: visible;
+    }
+    .rumbai-svg {
+      width: 100%;
+      height: 48px;
+      display: block;
+      filter: drop-shadow(0 4px 6px rgba(212, 175, 55, 0.35));
+    }
+    .rumbai-tassels-row {
+      position: absolute;
+      top: 24px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 16px;
+      pointer-events: none;
+    }
+    .rumbai-tassel {
+      position: relative;
+      transform-origin: top center;
+      animation: swayTassel 3.5s infinite ease-in-out alternate;
+    }
+    .rumbai-tassel:nth-child(2) { animation-delay: -1s; animation-duration: 4.2s; }
+    .rumbai-tassel:nth-child(3) { animation-delay: -2.2s; animation-duration: 3.8s; }
+    .rumbai-tassel:nth-child(4) { animation-delay: -0.6s; animation-duration: 4.6s; }
+
+    .tassel-knot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #FFF7D1, #D4AF37, #8C6500);
+      margin: 0 auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    }
+    .tassel-fringe {
+      width: 12px;
+      height: 22px;
+      background: linear-gradient(to bottom, #FFE885 0%, #F5CD47 50%, #A87A00 100%);
+      clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+      margin: 1px auto 0;
+      box-shadow: 0 3px 6px rgba(180, 140, 20, 0.3);
+      position: relative;
+    }
+    .tassel-fringe::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 2px;
+      right: 2px;
+      bottom: 0;
+      background: repeating-linear-gradient(90deg, transparent, transparent 1.5px, rgba(255,255,255,0.6) 1.5px, rgba(255,255,255,0.6) 3px);
+    }
+
+    @keyframes swayTassel {
+      0% { transform: rotate(7deg); }
+      100% { transform: rotate(-7deg); }
+    }
+
+    /* Hanging Christmas Ornaments */
+    .hanging-ornaments {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      pointer-events: none;
+      z-index: 5;
+      display: flex;
+      justify-content: space-around;
+      overflow: hidden;
+    }
+    .ornament {
+      position: relative;
+      transform-origin: top center;
+      animation: swingOrnament 4s infinite ease-in-out alternate;
+    }
+    .ornament:nth-child(2) { animation-delay: -1.2s; animation-duration: 4.8s; }
+    .ornament:nth-child(3) { animation-delay: -2.5s; animation-duration: 3.9s; }
+    .ornament:nth-child(4) { animation-delay: -0.8s; animation-duration: 5.2s; }
+    .ornament-string {
+      width: 1.5px;
+      height: 45px;
+      background: linear-gradient(to bottom, #A98018, #E2B734);
+      margin: 0 auto;
+    }
+    .ornament-string.long { height: 65px; }
+    .ornament-string.short { height: 35px; }
+    .ornament-ball {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #FF787C 0%, #D32027 60%, #7D090E 100%);
+      box-shadow: 0 4px 10px rgba(184, 37, 42, 0.45);
+      position: relative;
+    }
+    .ornament-ball.gold {
+      background: radial-gradient(circle at 35% 35%, #FFF6BF 0%, #F5CD47 55%, #A67500 100%);
+      box-shadow: 0 4px 10px rgba(212, 175, 55, 0.45);
+    }
+    .ornament-ball.silver {
+      background: radial-gradient(circle at 35% 35%, #FFFFFF 0%, #DDE3EA 60%, #9DA7B2 100%);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+    .ornament-ball::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 5px;
+      width: 6px;
+      height: 4px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    @keyframes swingOrnament {
+      0% { transform: rotate(5.5deg); }
+      100% { transform: rotate(-5.5deg); }
+    }
+
+    /* -------------------------------------------------------------
+       COVER / GATE SCREEN (SCREENSHOT 1: Uses gallery/bg awal.jpeg)
+    -------------------------------------------------------------- */
+    #gate-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: radial-gradient(circle at center, #FFFEF7 0%, #FFF8D4 45%, #FFE98A 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      transition: transform 0.9s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.8s ease;
+      overflow-y: auto;
+    }
+    #gate-screen.opened {
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .gate-container {
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+      padding: 34px 22px 30px;
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(24px) saturate(200%);
+      -webkit-backdrop-filter: blur(24px) saturate(200%);
+      border: 2px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 20px 55px rgba(180, 140, 20, 0.28), inset 0 1.5px 3px rgba(255, 255, 255, 0.95);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Arch Window Banner on Cover (gallery/bg awal.jpeg) */
+    .gate-arch-window {
+      width: 165px;
+      height: 225px;
+      margin: 10px auto 16px;
+      border-radius: 90px 90px 18px 18px;
+      border: 3.5px solid #E5B830;
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.35), inset 0 0 15px rgba(255, 255, 255, 0.6);
+      overflow: hidden;
+      position: relative;
+      background: #FFFDF0;
+    }
+    .gate-arch-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    .gate-container:hover .gate-arch-img {
+      transform: scale(1.06);
+    }
+
+    .gate-title-script {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.3rem;
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+    .gate-church-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .gate-respectful-note {
+      font-size: 0.81rem;
+      color: #6E613F;
+      line-height: 1.5;
+      margin-bottom: 14px;
+      padding: 0 10px;
+    }
+
+    .recipient-box {
+      margin: 12px 0 20px;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(10px);
+      border: 1px dashed var(--gold-primary);
+      box-shadow: inset 0 2px 8px rgba(212, 175, 55, 0.08);
+    }
+    .recipient-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-bottom: 3px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .recipient-name {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2rem;
+      line-height: 1.2;
+      word-break: break-word;
+    }
+
+    .btn-open-invitation {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 13px 26px;
+      background: linear-gradient(135deg, #FFE885 0%, #FFCD38 50%, #E6AC10 100%);
+      color: #382B05;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.45);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .btn-open-invitation:hover, .btn-open-invitation:active {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(212, 175, 55, 0.58);
+    }
+
+    /* Brand Credit Badge */
+    .brand-credit-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 16px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #7D651E;
+      background: rgba(255, 246, 200, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      padding: 5px 14px;
+      border-radius: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    /* -------------------------------------------------------------
+       GRAND POP-UP MODAL (SCREENSHOT 2: Uses gallery/bg1.jpeg)
+    -------------------------------------------------------------- */
+    #grand-popup-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10001;
+      background: rgba(35, 28, 14, 0.75);
+      backdrop-filter: blur(12px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      animation: fadeInModal 0.4s ease forwards;
+    }
+    #grand-popup-modal.show {
+      display: flex;
+    }
+
+    .grand-popup-card {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      background: radial-gradient(circle at top, #FFFFFF 0%, #FFFDF0 60%, #FFF3B8 100%);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border-radius: var(--radius-lg);
+      border: 3px solid #FFF2A8;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      text-align: center;
+      animation: zoomInPopup 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes fadeInModal {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes zoomInPopup {
+      from { transform: scale(0.75) translateY(30px); opacity: 0; }
+      to { transform: scale(1) translateY(0); opacity: 1; }
+    }
+
+    .btn-close-popup {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid var(--butter-yellow-dark);
+      color: #665200;
+      font-size: 1rem;
+      cursor: pointer;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+      transition: transform 0.2s;
+    }
+    .btn-close-popup:hover {
+      transform: scale(1.1);
+    }
+
+    .grand-popup-img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 230px;
+      background: #FFF;
+      overflow: hidden;
+    }
+    .grand-popup-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .grand-popup-body {
+      padding: 20px 20px 24px;
+    }
+
+    /* -------------------------------------------------------------
+       HEADER & HERO SECTION
+    -------------------------------------------------------------- */
+    .header-section {
+      text-align: center;
+      padding: 48px 20px 18px;
+      position: relative;
+    }
+    .cross-icon {
+      font-size: 2.2rem;
+      color: var(--gold-primary);
+      margin-bottom: 8px;
+      display: inline-block;
+      filter: drop-shadow(0 2px 10px rgba(212, 175, 55, 0.55));
+    }
+    .header-church {
+      font-size: 0.82rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--gold-dark);
+      margin-bottom: 4px;
+    }
+    .header-title-script {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.7rem;
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+    .header-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .header-badge {
+      display: inline-block;
+      padding: 6px 18px;
+      background: linear-gradient(90deg, #FFE885, #FFF2A8, #FFE885);
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #614600;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.2);
+    }
+
+    /* THEME & SUBTHEME BANNER */
+    .theme-card {
+      text-align: center;
+      position: relative;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 250, 222, 0.78) 100%);
+    }
+    .bible-verse {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #7A5700;
+      margin: 8px 0 14px;
+      line-height: 1.5;
+    }
+    .theme-label {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #8C7838;
+      font-weight: 700;
+    }
+    .theme-quote {
+      font-family: 'Cinzel', serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin: 4px 0 14px;
+    }
+    .subtheme-box {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      border-left: 4px solid var(--gold-primary);
+      text-align: left;
+    }
+    .subtheme-text {
+      font-size: 0.86rem;
+      line-height: 1.55;
+      color: #4A412A;
+    }
+
+    /* COUNTDOWN SECTION */
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-top: 14px;
+    }
+    .countdown-item {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--butter-yellow-dark);
+      border-radius: var(--radius-sm);
+      padding: 10px 4px;
+      text-align: center;
+      box-shadow: inset 0 2px 6px rgba(212, 175, 55, 0.1);
+    }
+    .countdown-num {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #8C6500;
+      font-family: 'Cinzel', serif;
+    }
+    .countdown-text {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    /* TIME & VENUE SECTION */
+    .event-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .event-icon-circle {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FFE885, #F5CD47);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #5C4300;
+      font-size: 1.15rem;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
+    }
+    .event-info-content h4 {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #8A6907;
+      margin-bottom: 3px;
+    }
+    .event-info-content p {
+      font-size: 0.94rem;
+      font-weight: 600;
+      color: #2E2714;
+    }
+
+    .btn-action-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .btn-action {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 14px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: none;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #FFE585 0%, #F5CD47 100%);
+      color: #382B05;
+      box-shadow: 0 6px 18px rgba(212, 175, 55, 0.35);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--butter-yellow-dark);
+      color: #5E4600;
+    }
+    .btn-action:hover {
+      transform: translateY(-2px);
+    }
+
+    /* AGENDA / BENTUK KEGIATAN */
+    .agenda-list {
+      list-style: none;
+      counter-reset: agenda-counter;
+      margin-top: 14px;
+    }
+    .agenda-item {
+      position: relative;
+      padding-left: 48px;
+      margin-bottom: 16px;
+    }
+    .agenda-item::before {
+      counter-increment: agenda-counter;
+      content: counter(agenda-counter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #FFF0A8, #FFDF70);
+      border: 1px solid var(--gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: #573E00;
+      box-shadow: 0 4px 10px rgba(212, 175, 55, 0.25);
+    }
+    .agenda-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #2D2510;
+      margin-bottom: 2px;
+    }
+    .agenda-desc {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* -------------------------------------------------------------
+       SUSUNAN PANITIA (DENGAN FOTO ASLI DI SEMUA KARTU!)
+    -------------------------------------------------------------- */
+    .section-header {
+      text-align: center;
+      margin-bottom: 18px;
+      position: relative;
+    }
+    .section-subtitle {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--gold-dark);
+      font-weight: 700;
+    }
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.45rem;
+      font-weight: 800;
+      margin-top: 4px;
+    }
+    .section-divider {
+      width: 70px;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #D4AF37, #FFF5B8, #D4AF37, transparent);
+      margin: 8px auto 0;
+    }
+
+    .panitia-tier-title {
+      font-size: 0.92rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #694C00;
+      padding: 8px 14px;
+      background: linear-gradient(90deg, rgba(255, 235, 140, 0.7), rgba(255, 248, 200, 0.35));
+      border-left: 4px solid var(--gold-primary);
+      border-radius: 6px;
+      margin: 20px 0 12px;
+    }
+
+    /* Panitia Grid System */
+    .panitia-grid-1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .panitia-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .panitia-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    /* Panitia Card with Real Photo Avatars & Frosted Glass */
+    .panitia-card {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1.5px solid rgba(255, 230, 120, 0.75);
+      border-radius: var(--radius-sm);
+      padding: 14px 8px;
+      text-align: center;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.12), inset 0 1px 1.5px rgba(255,255,255,0.9);
+      cursor: pointer;
+      transition: all 0.28s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+    }
+    .panitia-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 26px rgba(212, 175, 55, 0.32), inset 0 1px 2px rgba(255,255,255,1);
+      border-color: var(--gold-primary);
+      background: rgba(255, 255, 255, 0.95);
+    }
+    .panitia-avatar-wrapper {
+      position: relative;
+      width: 78px;
+      height: 78px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #FFE585, #E6B800, #FFF5B8);
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
+      overflow: hidden;
+    }
+    .panitia-card.featured .panitia-avatar-wrapper {
+      width: 90px;
+      height: 90px;
+      padding: 4px;
+    }
+    .panitia-media {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+      background-color: #FFFDF0;
+    }
+    .panitia-zoom-badge {
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #A81B21;
+      color: white;
+      font-size: 0.65rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+      z-index: 2;
+    }
+    .panitia-role {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #946B00;
+      margin-bottom: 3px;
+      letter-spacing: 0.5px;
+    }
+    .panitia-name {
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: #2D2510;
+      line-height: 1.3;
+      word-break: break-word;
+    }
+    .panitia-card.featured .panitia-name {
+      font-size: 0.94rem;
+    }
+
+    /* -------------------------------------------------------------
+       OUR GALLERY (CONTINUOUS RIGHT-SCROLLING MARQUEE SHOWCASE)
+    -------------------------------------------------------------- */
+    .gallery-title-script {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+    
+    /* Continuous Marquee Carousel Moving to the Right */
+    .marquee-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 16px 0;
+      margin-top: 10px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 248, 210, 0.4));
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1.5px solid rgba(255, 235, 140, 0.8);
+      box-shadow: inset 0 2px 10px rgba(212, 175, 55, 0.08);
+    }
+    .marquee-track {
+      display: flex;
+      gap: 14px;
+      width: max-content;
+      animation: marqueeScrollRight 40s linear infinite;
+      will-change: transform;
+    }
+    .marquee-wrapper:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes marqueeScrollRight {
+      0% {
+        transform: translate3d(-50%, 0, 0);
+      }
+      100% {
+        transform: translate3d(0%, 0, 0);
+      }
+    }
+
+    /* Individual Slide Card in Marquee with Real Photo */
+    .marquee-slide-card {
+      width: 140px;
+      flex-shrink: 0;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1.5px solid #FFDF70;
+      border-radius: var(--radius-sm);
+      padding: 12px 8px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.16);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      position: relative;
+    }
+    .marquee-slide-card:hover {
+      transform: translateY(-6px) scale(1.05);
+      border-color: var(--gold-primary);
+      box-shadow: 0 10px 22px rgba(212, 175, 55, 0.35);
+    }
+    .marquee-avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      margin: 0 auto 8px;
+      padding: 3px;
+      background: linear-gradient(135deg, #FFE885, #E6B800);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+      position: relative;
+      overflow: hidden;
+    }
+    .marquee-avatar img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+    }
+    .marquee-play-icon {
+      position: absolute;
+      bottom: -2px;
+      right: -2px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #A81B21;
+      color: white;
+      font-size: 0.65rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    }
+    .marquee-name {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #2D2510;
+      line-height: 1.25;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .marquee-badge {
+      display: inline-block;
+      font-size: 0.66rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #8C6500;
+      background: #FFF7CE;
+      border: 1px solid #FFE585;
+      border-radius: 12px;
+      padding: 2px 6px;
+      margin-top: 4px;
+    }
+
+    /* -------------------------------------------------------------
+       LIGHTBOX POP-UP MODAL (FULL 4:5 SLIDE VIDEO & IMAGE VIEW)
+    -------------------------------------------------------------- */
+    #media-lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10002;
+      background: rgba(28, 22, 10, 0.88);
+      backdrop-filter: blur(14px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    #media-lightbox.active {
+      display: flex;
+    }
+    .lightbox-content {
+      background: radial-gradient(circle at top, #FFFFFF 0%, #FFFDF5 65%, #FFF2AA 100%);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+      border: 3px solid var(--butter-yellow);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+      animation: zoomInPopup 0.35s ease forwards;
+    }
+    .lightbox-media-wrapper {
+      width: 250px;
+      height: 312px; /* 4:5 aspect ratio */
+      border-radius: 20px;
+      margin: 0 auto 16px;
+      padding: 5px;
+      background: linear-gradient(135deg, #FFE585, #D4AF37, #FFF5B8);
+      box-shadow: 0 12px 30px rgba(212, 175, 55, 0.45);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox-media-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      display: block;
+      background: #FFFDF5;
+    }
+    .lightbox-role {
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #8C6500;
+      letter-spacing: 1px;
+    }
+    .lightbox-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #2D2510;
+      margin: 6px 0 12px;
+    }
+
+    /* -------------------------------------------------------------
+       GUESTBOOK / UCAPAN & DOA (KESAN DAN PESAN)
+    -------------------------------------------------------------- */
+    .input-group {
+      margin-bottom: 14px;
+      text-align: left;
+    }
+    .input-label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #5C4300;
+      margin-bottom: 5px;
+    }
+    .input-control {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--butter-yellow-dark);
+      background: rgba(255, 255, 255, 0.95);
+      font-family: inherit;
+      font-size: 0.9rem;
+      color: #332707;
+      transition: border 0.3s;
+    }
+    .input-control:focus {
+      outline: none;
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.25);
+    }
+    textarea.input-control {
+      resize: vertical;
+      min-height: 85px;
+    }
+
+    .btn-submit-wish {
+      width: 100%;
+      padding: 13px 20px;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #FFE885, #F5CD47);
+      border: none;
+      font-weight: 700;
+      color: #402E00;
+      cursor: pointer;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 16px rgba(212, 175, 55, 0.35);
+      transition: all 0.25s;
+    }
+    .btn-submit-wish:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5);
+    }
+
+    .wishes-container {
+      max-height: 380px;
+      overflow-y: auto;
+      margin-top: 18px;
+      padding-right: 4px;
+    }
+    .wish-item {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      margin-bottom: 12px;
+      border-left: 3px solid var(--butter-yellow-dark);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      text-align: left;
+    }
+    .wish-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 6px;
+    }
+    .wish-sender {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #382B05;
+    }
+    .wish-time {
+      font-size: 0.72rem;
+      color: #8C7838;
+    }
+    .wish-message {
+      font-size: 0.85rem;
+      color: #4A412A;
+      line-height: 1.5;
+    }
+
+    /* -------------------------------------------------------------
+       RSVP & WHATSAPP
+    -------------------------------------------------------------- */
+    .rsvp-radio-group {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .rsvp-radio-label {
+      flex: 1;
+      text-align: center;
+      padding: 10px 4px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--butter-yellow-dark);
+      background: rgba(255, 255, 255, 0.85);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .rsvp-radio-label input {
+      display: none;
+    }
+    .rsvp-radio-label:has(input:checked) {
+      background: linear-gradient(135deg, #FFE885, #F5CD47);
+      color: #382B05;
+      font-weight: 700;
+      border-color: var(--gold-primary);
+      box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+    }
+
+    /* -------------------------------------------------------------
+       LUXURY GLASSMORPHISM BOTTOM NAVIGATION BAR (SCREENSHOT 4 FIX)
+    -------------------------------------------------------------- */
+    .bottom-nav-bar {
+      position: fixed;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 36px);
+      max-width: 420px;
+      height: 64px;
+      background: rgba(255, 255, 255, 0.45);
+      backdrop-filter: blur(28px) saturate(200%);
+      -webkit-backdrop-filter: blur(28px) saturate(200%);
+      border: 1.5px solid rgba(255, 255, 255, 0.85);
+      border-radius: 50px;
+      box-shadow: 0 16px 40px rgba(180, 140, 20, 0.18), inset 0 1.5px 2px rgba(255, 255, 255, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0 12px;
+      z-index: 1000;
+    }
+    .nav-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #695628;
+      font-size: 1.25rem;
+      background: rgba(255, 255, 255, 0.28);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.85);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      text-decoration: none;
+    }
+    .nav-btn.active, .nav-btn:hover {
+      color: #382B05;
+      background: linear-gradient(135deg, rgba(255, 240, 160, 0.92), rgba(255, 215, 65, 0.92));
+      border-color: rgba(255, 255, 255, 0.95);
+      transform: translateY(-4px) scale(1.08);
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4), inset 0 1px 2px #FFFFFF;
+    }
+    .nav-btn.music-btn {
+      color: #9C1F24;
+    }
+    .nav-btn.music-btn.playing i {
+      animation: spinVinyl 3.5s linear infinite;
+    }
+    @keyframes spinVinyl {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* FOOTER */
+    .footer-section {
+      text-align: center;
+      padding: 24px 20px 40px;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      line-height: 1.6;
+    }
+    .footer-section .footer-decor {
+      font-size: 1.5rem;
+      color: var(--gold-primary);
+      margin-bottom: 8px;
+    }
+    .brand-footer-box {
+      margin-top: 14px;
+      padding: 10px 18px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      border-radius: 50px;
+      display: inline-block;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      box-shadow: 0 4px 15px rgba(212, 175, 55, 0.12);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Ambient Lights -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Background Canvas for Falling Golden Sparkles, Twinkling Diamond Stars & Snowflakes -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Audio Background Player -->
+  <audio id="audio-backsound" loop preload="auto">
+    <source src="backsound.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung elemen audio.
+  </audio>
+
+  <!-- =============================================================
+       GATE / COVER SCREEN (SCREENSHOT 1: Uses gallery/bg awal.jpeg)
+  ============================================================== -->
+  <div id="gate-screen">
+    <div class="gate-container">
+
+      <!-- Hiasan Rumbai-Rumbai Natal Emas Menjuntai (Festive Swags & Tassels) -->
+      <div class="rumbai-garland-wrap">
+        <svg class="rumbai-svg" viewBox="0 0 400 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="rumbaiGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#D4AF37"/>
+              <stop offset="25%" stop-color="#FFF2A8"/>
+              <stop offset="50%" stop-color="#F5CD47"/>
+              <stop offset="75%" stop-color="#FFF8D4"/>
+              <stop offset="100%" stop-color="#D4AF37"/>
+            </linearGradient>
+          </defs>
+          <path d="M 0,0 Q 65,30 130,4 Q 200,32 270,4 Q 335,30 400,0" fill="none" stroke="url(#rumbaiGoldGrad)" stroke-width="4" stroke-linecap="round"/>
+          <path d="M 0,4 Q 65,34 130,8 Q 200,36 270,8 Q 335,34 400,4" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+        </svg>
+
+        <div class="rumbai-tassels-row">
+          <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+          <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+          <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+          <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+        </div>
+      </div>
+
+      <!-- Hanging Christmas Ornaments Decoration -->
+      <div class="hanging-ornaments">
+        <div class="ornament">
+          <div class="ornament-string"></div>
+          <div class="ornament-ball"></div>
+        </div>
+        <div class="ornament">
+          <div class="ornament-string long"></div>
+          <div class="ornament-ball gold"></div>
+        </div>
+        <div class="ornament">
+          <div class="ornament-string short"></div>
+          <div class="ornament-ball silver"></div>
+        </div>
+        <div class="ornament">
+          <div class="ornament-string"></div>
+          <div class="ornament-ball"></div>
+        </div>
+      </div>
+
+      <!-- Arch Window Frame with Christmas Visual (gallery/bg awal.jpeg) -->
+      <div class="gate-arch-window" style="margin-top: 18px;">
+        <img src="gallery/bg awal.jpeg" class="gate-arch-img" alt="Natal HKBP Efrata Driyorejo 2026">
+      </div>
+
+      <!-- Dazzling Glitter Titles -->
+      <div class="gate-title-script">
+        <span class="glitter-sparkle">✦</span> 
+        <span class="glitter-text-red">Natal Remaja - Naposobulung</span> 
+        <span class="glitter-sparkle delayed">✦</span>
+      </div>
+      <div class="gate-church-name">
+        <span class="glitter-text-gold">HKBP EFRATA DRIYOREJO 2026</span>
+      </div>
+
+      <p class="gate-respectful-note">
+        Tanpa Mengurangi Rasa Hormat, Kami Mengundang Bapak/Ibu/Saudara/i untuk Hadir di Acara Kami :
+      </p>
+
+      <div class="recipient-box">
+        <div class="recipient-label">Kepada :</div>
+        <div id="display-recipient" class="recipient-name">
+          <span class="glitter-text-gold">Tamu Terkasih</span>
+        </div>
+      </div>
+
+      <button id="btn-open" class="btn-open-invitation">
+        <i class="fa-regular fa-envelope-open" style="font-size: 1.1rem;"></i> BUKA UNDANGAN
+      </button>
+
+      <!-- Brand Credit -->
+      <div>
+        <div class="brand-credit-badge">
+          <i class="fa-solid fa-sparkles" style="color: #D4AF37;"></i> by park pha Ahn.Group
+        </div>
+      </div>
+
+      <div style="margin-top: 14px; font-size: 0.72rem; color: #9E8F67;">
+        <i class="fa-solid fa-music" style="margin-right: 4px;"></i> Disertai alunan musik natal
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       GRAND POP-UP HERO MODAL (SCREENSHOT 2: Uses gallery/bg1.jpeg)
+  ============================================================== -->
+  <div id="grand-popup-modal">
+    <div class="grand-popup-card">
+      <button class="btn-close-popup" id="btn-close-grand" title="Tutup">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="grand-popup-img-wrapper">
+        <img src="gallery/bg1.jpeg" alt="Selamat Menyambut Natal 2026">
+      </div>
+
+      <div class="grand-popup-body">
+        <div style="font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; color: #8A6907; font-weight: 700;">
+          <span class="glitter-sparkle">✦</span> SELAMAT MENYAMBUT NATAL 2026 <span class="glitter-sparkle delayed">✦</span>
+        </div>
+        <div class="script-font" style="font-size: 2.3rem; margin: 4px 0;">
+          <span class="glitter-text-red">Terang di Tengah Kegelapan</span>
+        </div>
+        <p style="font-size: 0.85rem; color: #574B2A; line-height: 1.5; margin-bottom: 16px;">
+          <i>"Terang itu bercahaya di dalam kegelapan dan kegelapan itu tidak menguasainya."</i><br>
+          <b>— Yohanes 1 : 5 —</b>
+        </p>
+        <button id="btn-explore-content" class="btn-open-invitation" style="padding: 12px 24px; font-size: 0.92rem;">
+          <i class="fa-solid fa-scroll"></i> LIHAT DETAIL ACARA
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       MAIN MOBILE-FIRST APP WRAPPER
+  ============================================================== -->
+  <div class="app-wrapper">
+
+    <!-- HEADER / HERO SECTION -->
+    <header id="hero-section" class="header-section">
+      <!-- Hiasan Rumbai-Rumbai Natal Emas Header -->
+      <div class="rumbai-garland-wrap">
+        <svg class="rumbai-svg" viewBox="0 0 500 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 0,0 Q 80,30 160,4 Q 250,32 340,4 Q 420,30 500,0" fill="none" stroke="url(#rumbaiGoldGrad)" stroke-width="4.5" stroke-linecap="round"/>
+          <path d="M 0,4 Q 80,34 160,8 Q 250,36 340,8 Q 420,34 500,4" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+        </svg>
+        <div class="rumbai-tassels-row">
+          <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+          <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+          <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+          <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+        </div>
+      </div>
+
+      <!-- Hanging Christmas Ornaments -->
+      <div class="hanging-ornaments" style="height: 70px;">
+        <div class="ornament"><div class="ornament-string short"></div><div class="ornament-ball gold"></div></div>
+        <div class="ornament"><div class="ornament-string"></div><div class="ornament-ball"></div></div>
+        <div class="ornament"><div class="ornament-string long"></div><div class="ornament-ball silver"></div></div>
+        <div class="ornament"><div class="ornament-string short"></div><div class="ornament-ball gold"></div></div>
+      </div>
+
+      <div class="cross-icon" style="margin-top: 10px;">
+        <i class="fa-solid fa-cross"></i>
+      </div>
+      <div class="header-church">HKBP EFRATA DRIYOREJO</div>
+      <div class="header-title-script">
+        <span class="glitter-sparkle">✦</span> 
+        <span class="glitter-text-red">Perayaan Natal</span> 
+        <span class="glitter-sparkle delayed">✦</span>
+      </div>
+      <h1 class="header-title">
+        <span class="glitter-text-gold">REMAJA - NAPOSOBULUNG<br>TAHUN 2026</span>
+      </h1>
+      <div class="header-badge">
+        <i class="fa-regular fa-calendar-check" style="margin-right: 6px;"></i> Minggu, 20 Desember 2026
+      </div>
+    </header>
+
+    <main style="padding: 0 16px 20px;">
+
+      <!-- SALAM PEMBUKA & TEMA -->
+      <section class="glass-card theme-card">
+        <div class="theme-label"><span class="glitter-sparkle">✦</span> AYAT TEMA <span class="glitter-sparkle delayed">✦</span></div>
+        <div class="bible-verse">
+          "Terang itu bercahaya di dalam kegelapan dan kegelapan itu tidak menguasainya."
+        </div>
+        <div style="font-weight: 700; color: #6E5300; font-size: 0.88rem; margin-bottom: 16px;">
+          — Yohanes 1 : 5 —
+        </div>
+
+        <div style="height: 1px; background: linear-gradient(90deg, transparent, var(--butter-yellow-dark), transparent); margin: 14px 0;"></div>
+
+        <div class="theme-label"><span class="glitter-sparkle">✦</span> TEMA <span class="glitter-sparkle delayed">✦</span></div>
+        <div class="theme-quote">
+          <span class="glitter-text-gold">"Terang di Tengah Kegelapan."</span>
+        </div>
+
+        <div class="subtheme-box">
+          <div style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; color: #7A5700; margin-bottom: 4px;">
+            <i class="fa-solid fa-quote-left" style="margin-right: 5px;"></i> SUB TEMA
+          </div>
+          <div class="subtheme-text">
+            "Remaja dan Naposo Berakar dalam Kristus dan Bertumbuh dalam Terang-Nya di Tengah Kegelapan Zaman"
+          </div>
+        </div>
+      </section>
+
+      <!-- COUNTDOWN TIMER -->
+      <section class="glass-card">
+        <div class="section-header" style="margin-bottom: 10px;">
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> MENUJU HARI BAHAGIA <span class="glitter-sparkle delayed">✦</span></div>
+          <h3 class="section-title" style="font-size: 1.25rem;"><span class="glitter-text-gold">Hitung Mundur Acara</span></h3>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="countdown-grid">
+          <div class="countdown-item">
+            <div id="cd-days" class="countdown-num">00</div>
+            <div class="countdown-text">Hari</div>
+          </div>
+          <div class="countdown-item">
+            <div id="cd-hours" class="countdown-num">00</div>
+            <div class="countdown-text">Jam</div>
+          </div>
+          <div class="countdown-item">
+            <div id="cd-minutes" class="countdown-num">00</div>
+            <div class="countdown-text">Menit</div>
+          </div>
+          <div class="countdown-item">
+            <div id="cd-seconds" class="countdown-num">00</div>
+            <div class="countdown-text">Detik</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WAKTU & TEMPAT -->
+      <section id="lokasi-section" class="glass-card">
+        <div class="section-header">
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> WAKTU & TEMPAT <span class="glitter-sparkle delayed">✦</span></div>
+          <h3 class="section-title"><span class="glitter-text-gold">Pelaksanaan Ibadah</span></h3>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="event-info-item">
+          <div class="event-icon-circle">
+            <i class="fa-regular fa-calendar-days"></i>
+          </div>
+          <div class="event-info-content">
+            <h4>Hari & Tanggal</h4>
+            <p>Minggu, 20 Desember 2026</p>
+          </div>
+        </div>
+
+        <div class="event-info-item">
+          <div class="event-icon-circle">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <div class="event-info-content">
+            <h4>Waktu</h4>
+            <p>16.30 WIB - Selesai</p>
+          </div>
+        </div>
+
+        <div class="event-info-item">
+          <div class="event-icon-circle">
+            <i class="fa-solid fa-church"></i>
+          </div>
+          <div class="event-info-content">
+            <h4>Tempat / Lokasi</h4>
+            <p>Gereja HKBP Efrata Driyorejo</p>
+            <p style="font-size: 0.8rem; font-weight: normal; color: #695F47; margin-top: 2px;">
+              Driyorejo, Gresik, Jawa Timur
+            </p>
+          </div>
+        </div>
+
+        <div class="btn-action-group">
+          <a href="https://www.google.com/maps/search/HKBP+Efrata+Driyorejo" target="_blank" rel="noopener noreferrer" class="btn-action btn-primary">
+            <i class="fa-solid fa-location-dot"></i> Buka Google Maps
+          </a>
+          <button id="btn-add-calendar" class="btn-action btn-secondary">
+            <i class="fa-regular fa-calendar-plus"></i> Simpan Agenda
+          </button>
+        </div>
+      </section>
+
+      <!-- BENTUK KEGIATAN -->
+      <section class="glass-card">
+        <div class="section-header">
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> RUNDOWN & ACARA <span class="glitter-sparkle delayed">✦</span></div>
+          <h3 class="section-title"><span class="glitter-text-gold">Bentuk Kegiatan</span></h3>
+          <div class="section-divider"></div>
+        </div>
+
+        <ol class="agenda-list">
+          <li class="agenda-item">
+            <div class="agenda-title">Ibadah Natal Remaja - Naposobulung</div>
+            <div class="agenda-desc">
+              Acara utama peribadahan natal kudus untuk Remaja - Naposobulung HKBP Efrata Driyorejo 2026 penuh khidmat, penyalaan lilin, dan firman Tuhan.
+            </div>
+          </li>
+          <li class="agenda-item">
+            <div class="agenda-title">Persembahan Pujian & Penampilan Natal</div>
+            <div class="agenda-desc">
+              Penampilan istimewa dari Remaja - Naposobulung HKBP Efrata Driyorejo dan tamu undangan berupa: <b>Vokal Grup, Liturgi Kreatif, Koor Agung, dan pujian lainnya</b>.
+            </div>
+          </li>
+          <li class="agenda-item">
+            <div class="agenda-title">Acara Bebas & Ramah Tamah (Hiburan)</div>
+            <div class="agenda-desc">
+              Sesi hiburan sukacita, ramah tamah persaudaraan, pembagian hadiah/doorprize, serta santap bersama.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- =========================================================
+           SUSUNAN PANITIA (DENGAN PEMBINA & PEMBIMBING NAPOSO)
+      ========================================================== -->
+      <section id="panitia-section" class="glass-card">
+        <!-- Hiasan Rumbai-Rumbai Natal Kartu Panitia -->
+        <div class="rumbai-garland-wrap">
+          <svg class="rumbai-svg" viewBox="0 0 500 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,0 Q 80,30 160,4 Q 250,32 340,4 Q 420,30 500,0" fill="none" stroke="url(#rumbaiGoldGrad)" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M 0,4 Q 80,34 160,8 Q 250,36 340,8 Q 420,34 500,4" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+          </svg>
+          <div class="rumbai-tassels-row">
+            <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+            <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+            <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+            <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+          </div>
+        </div>
+
+        <div class="section-header" style="margin-top: 14px;">
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> STRUKTUR ORGANISASI <span class="glitter-sparkle delayed">✦</span></div>
+          <h3 class="section-title"><span class="glitter-text-gold">Susunan Panitia Natal 2026</span></h3>
+          <div class="section-divider"></div>
+          <p style="font-size: 0.8rem; color: #7D6B42; margin-top: 8px;">
+            <i class="fa-solid fa-play" style="margin-right: 4px; color: #A81B21;"></i> Ketuk kartu untuk menonton animasi video slide
+          </p>
+        </div>
+
+        <!-- 1. PEMBINA (Pdt & Inang St Dewan Koinonia) -->
+        <div class="panitia-tier-title"><i class="fa-solid fa-cross"></i> Pembina</div>
+        <div class="panitia-grid-2">
+          <div class="panitia-card featured" onclick="openMediaModal('Pdt. Jhon Rikardo Klamer Siregar, S.Th', 'Pembina (Pendeta HKBP Ressort Diaspora Surabaya)', 'Slide Individu/PEMBINA/JHON.jpeg', 'image')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/PEMBINA/JHON.jpeg" class="panitia-media" alt="Pdt. Jhon Rikardo Klamer Siregar, S.Th">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="panitia-role">Pembina</div>
+            <div class="panitia-name">Pdt. Jhon Rikardo Klamer Siregar, S.Th</div>
+            <div style="font-size: 0.7rem; color: #6E613F; margin-top: 2px;">Pendeta HKBP Ressort Diaspora Surabaya</div>
+          </div>
+
+          <div class="panitia-card featured" onclick="openMediaModal('St. R. Sihombing', 'Pembina (Inang St Dewan Koinonia)', 'Slide Individu/PEMBINA/St. R Sihombing.jpeg', 'image')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/PEMBINA/St. R Sihombing.jpeg" class="panitia-media" alt="St. R. Sihombing">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="panitia-role">Pembina</div>
+            <div class="panitia-name">St. R. Sihombing</div>
+            <div style="font-size: 0.7rem; color: #6E613F; margin-top: 2px;">Inang St Dewan Koinonia</div>
+          </div>
+        </div>
+
+        <!-- 2. PEMBIMBING NAPOSO -->
+        <div class="panitia-tier-title" style="margin-top: 16px;"><i class="fa-solid fa-hands-holding-child"></i> Pembimbing Naposo</div>
+        <div class="panitia-grid-1">
+          <div class="panitia-card featured" onclick="openMediaModal('Cln. Pdt. Carel Hot A. Siburian', 'Pembimbing Naposo HKBP Efrata Driyorejo', 'Slide Individu/PEMBINA/Cln.Pdt. Carel Hot A. Siburian.jpeg', 'image')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/PEMBINA/Cln.Pdt. Carel Hot A. Siburian.jpeg" class="panitia-media" alt="Cln. Pdt. Carel Hot A. Siburian">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+            <div class="panitia-role">Pembimbing Naposo</div>
+            <div class="panitia-name">Cln. Pdt. Carel Hot A. Siburian</div>
+            <div style="font-size: 0.72rem; color: #6E613F; margin-top: 2px;">HKBP Efrata Driyorejo</div>
+          </div>
+        </div>
+
+        <!-- 3. BADAN PENGURUS HARIAN (BPI) -->
+        <div class="panitia-tier-title"><i class="fa-solid fa-crown"></i> Pengurus Inti (BPI)</div>
+        <div class="panitia-grid-2">
+          <div class="panitia-card featured" onclick="openMediaModal('Rafly Andreas Sitorus', 'Ketua Pelaksana', 'Slide Individu/BPI/RAFLY.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/BPI/RAFLY.jpg" class="panitia-media" alt="Rafly Andreas Sitorus">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Ketua Pelaksana</div>
+            <div class="panitia-name">Rafly Andreas Sitorus</div>
+          </div>
+
+          <div class="panitia-card featured" onclick="openMediaModal('Salomo Fransiskus Pakpahan', 'Wakil Pelaksana', 'Slide Individu/BPI/SALOMO.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/BPI/SALOMO.jpg" class="panitia-media" alt="Salomo Fransiskus Pakpahan">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Wakil Pelaksana</div>
+            <div class="panitia-name">Salomo Fransiskus Pakpahan</div>
+          </div>
+
+          <div class="panitia-card featured" onclick="openMediaModal('Dyna Evadyllya Panjaitan', 'Sekretaris', 'Slide Individu/BPI/DYNA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/BPI/DYNA.jpg" class="panitia-media" alt="Dyna Evadyllya Panjaitan">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Sekretaris</div>
+            <div class="panitia-name">Dyna Evadyllya Panjaitan</div>
+          </div>
+
+          <div class="panitia-card featured" onclick="openMediaModal('Maysela Benediktus Pakpahan', 'Bendahara', 'Slide Individu/BPI/SELA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/BPI/SELA.jpg" class="panitia-media" alt="Maysela Benediktus Pakpahan">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Bendahara</div>
+            <div class="panitia-name">Maysela Benediktus Pakpahan</div>
+          </div>
+        </div>
+
+        <!-- 4. SIE ACARA -->
+        <div class="panitia-tier-title"><i class="fa-solid fa-masks-theater"></i> Sie Acara</div>
+        <div class="panitia-grid-1" style="margin-bottom: 10px;">
+          <div class="panitia-card" onclick="openMediaModal('Ayu Paune Yuliana Pakpahan', 'Koordinator Sie Acara', 'Slide Individu/ACARA/AYU KOOR.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/ACARA/AYU KOOR.jpg" class="panitia-media" alt="Ayu Paune Yuliana Pakpahan">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Koordinator</div>
+            <div class="panitia-name">Ayu Paune Yuliana Pakpahan</div>
+          </div>
+        </div>
+        <div class="panitia-grid-2">
+          <div class="panitia-card" onclick="openMediaModal('Milka Rosabella M Pakpahan', 'Anggota Sie Acara', 'Slide Individu/ACARA/BELLA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/ACARA/BELLA.jpg" class="panitia-media" alt="Milka Rosabella M Pakpahan"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Milka Rosabella M Pakpahan</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Stefani Panjaitan', 'Anggota Sie Acara', 'Slide Individu/ACARA/STEFANI.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/ACARA/STEFANI.jpg" class="panitia-media" alt="Stefani Panjaitan"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Stefani Panjaitan</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Maria Ermauli Lumbanraja', 'Anggota Sie Acara', 'Slide Individu/ACARA/MARIA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/ACARA/MARIA.jpg" class="panitia-media" alt="Maria Ermauli Lumbanraja"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Maria Ermauli Lumbanraja</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Sri Duma Hutahaean', 'Anggota Sie Acara', 'Slide Individu/ACARA/DUMA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/ACARA/DUMA.jpg" class="panitia-media" alt="Sri Duma Hutahaean"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Sri Duma Hutahaean</div>
+          </div>
+        </div>
+
+        <!-- 5. MUSIK DAN KOOR -->
+        <div class="panitia-tier-title"><i class="fa-solid fa-music"></i> Musik dan Koor</div>
+        <div class="panitia-grid-1" style="margin-bottom: 10px;">
+          <div class="panitia-card" onclick="openMediaModal('Ivana Belinda Pakpahan', 'Koordinator Musik & Koor', 'Slide Individu/MUSIK/IVANA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/MUSIK/IVANA.jpg" class="panitia-media" alt="Ivana Belinda Pakpahan">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Koordinator</div>
+            <div class="panitia-name">Ivana Belinda Pakpahan</div>
+          </div>
+        </div>
+        <div class="panitia-grid-3">
+          <div class="panitia-card" onclick="openMediaModal('Vany Panjaitan', 'Anggota Musik & Koor', 'Slide Individu/MUSIK/VANY.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/MUSIK/VANY.jpg" class="panitia-media" alt="Vany Panjaitan"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Vany Panjaitan</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Boy Aritonang', 'Anggota Musik & Koor', 'Slide Individu/MUSIK/BOY.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/MUSIK/BOY.jpg" class="panitia-media" alt="Boy Aritonang"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Boy Aritonang</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Paulus Panjaitan', 'Anggota Musik & Koor', 'Slide Individu/MUSIK/PAULUS.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/MUSIK/PAULUS.jpg" class="panitia-media" alt="Paulus Panjaitan"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Paulus Panjaitan</div>
+          </div>
+        </div>
+
+        <!-- 6. PUBLIKASI DEKORASI DAN DOKUMENTASI (PDD) -->
+        <div class="panitia-tier-title"><i class="fa-solid fa-camera-retro"></i> Publikasi Dekorasi & Dokumentasi</div>
+        <div class="panitia-grid-1" style="margin-bottom: 10px;">
+          <div class="panitia-card" onclick="openMediaModal('Jonathan Sormin', 'Koordinator PDD', 'Slide Individu/PDD/JONATHAN.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/PDD/JONATHAN.jpg" class="panitia-media" alt="Jonathan Sormin">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Koordinator</div>
+            <div class="panitia-name">Jonathan Sormin</div>
+          </div>
+        </div>
+        <div class="panitia-grid-3">
+          <div class="panitia-card" onclick="openMediaModal('Dyna Evadyllya Panjaitan', 'Anggota PDD', 'Slide Individu/PDD/DYNA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/PDD/DYNA.jpg" class="panitia-media" alt="Dyna Evadyllya Panjaitan"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Dyna Evadyllya Panjaitan</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Netta Gultom', 'Anggota PDD', 'Slide Individu/PDD/NETHA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/PDD/NETHA.jpg" class="panitia-media" alt="Netta Gultom"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Netta Gultom</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Maysela Benediktus Pakpahan', 'Anggota PDD', 'Slide Individu/PDD/SELA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/PDD/SELA.jpg" class="panitia-media" alt="Maysela Benediktus Pakpahan"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Maysela Benediktus Pakpahan</div>
+          </div>
+        </div>
+
+        <!-- 7. PERLENGKAPAN -->
+        <div class="panitia-tier-title"><i class="fa-solid fa-toolbox"></i> Perlengkapan</div>
+        <div class="panitia-grid-1" style="margin-bottom: 10px;">
+          <div class="panitia-card" onclick="openMediaModal('Gunawan Pasaribu', 'Koordinator Perlengkapan', 'Slide Individu/PERKAP/GUNAWAN.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/PERKAP/GUNAWAN.jpg" class="panitia-media" alt="Gunawan Pasaribu">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Koordinator</div>
+            <div class="panitia-name">Gunawan Pasaribu</div>
+          </div>
+        </div>
+        <div class="panitia-grid-2">
+          <div class="panitia-card" onclick="openMediaModal('Josafat Pangaribuan', 'Anggota Perlengkapan', 'Slide Individu/PERKAP/YOSAFAT.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/PERKAP/YOSAFAT.jpg" class="panitia-media" alt="Josafat Pangaribuan"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Josafat Pangaribuan</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Brando Lumbanraja', 'Anggota Perlengkapan', 'Slide Individu/PERKAP/BRANDO.%20mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/PERKAP/BRANDO.jpg" class="panitia-media" alt="Brando Lumbanraja"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Brando Lumbanraja</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Josua Hutahaean', 'Anggota Perlengkapan', 'Slide Individu/PERKAP/JOSUA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/PERKAP/JOSUA.jpg" class="panitia-media" alt="Josua Hutahaean"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Josua Hutahaean</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Daniel Panjaitan', 'Anggota Perlengkapan', 'Slide Individu/PERKAP/DANIEL.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/PERKAP/DANIEL.jpg" class="panitia-media" alt="Daniel Panjaitan"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Daniel Panjaitan</div>
+          </div>
+        </div>
+
+        <!-- 8. DANA DAN USAHA -->
+        <div class="panitia-tier-title"><i class="fa-solid fa-coins"></i> Dana dan Usaha</div>
+        <div class="panitia-grid-1" style="margin-bottom: 10px;">
+          <div class="panitia-card" onclick="openMediaModal('Karlam Sinaga', 'Koordinator Dana & Usaha', 'Slide Individu/DANUS/KARL,AM.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/DANUS/KARL,AM.jpg" class="panitia-media" alt="Karlam Sinaga">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Koordinator</div>
+            <div class="panitia-name">Karlam Sinaga</div>
+          </div>
+        </div>
+        <div class="panitia-grid-3">
+          <div class="panitia-card" onclick="openMediaModal('Larissa Simangunsong', 'Anggota Dana & Usaha', 'Slide Individu/DANUS/LARISSA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/DANUS/LARISSA.jpg" class="panitia-media" alt="Larissa Simangunsong"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Larissa Simangunsong</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Naomi Panggabean', 'Anggota Dana & Usaha', 'Slide Individu/DANUS/NAOMI.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/DANUS/NAOMI.jpg" class="panitia-media" alt="Naomi Panggabean"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Naomi Panggabean</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Cristina Tampubolon', 'Anggota Dana & Usaha', 'Slide Individu/DANUS/CRISTINA.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/DANUS/CRISTINA.jpg" class="panitia-media" alt="Cristina Tampubolon"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Cristina Tampubolon</div>
+          </div>
+        </div>
+
+        <!-- 9. KONSUMSI (Brykson Lumbanraja satu-satunya di sini) -->
+        <div class="panitia-tier-title"><i class="fa-solid fa-utensils"></i> Konsumsi</div>
+        <div class="panitia-grid-1" style="margin-bottom: 10px;">
+          <div class="panitia-card" onclick="openMediaModal('Brykson Lumbanraja', 'Koordinator Konsumsi', 'Slide Individu/KONSUM/BRYKSON.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/KONSUM/BRYKSON.jpg" class="panitia-media" alt="Brykson Lumbanraja">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Koordinator</div>
+            <div class="panitia-name">Brykson Lumbanraja</div>
+          </div>
+        </div>
+        <div class="panitia-grid-3">
+          <div class="panitia-card" onclick="openMediaModal('Ferdinand Simangunsong', 'Anggota Konsumsi', 'Slide Individu/KONSUM/FERDINAN.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/KONSUM/FERDINAN.jpg" class="panitia-media" alt="Ferdinand Simangunsong"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Ferdinand Simangunsong</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Melani Pasaribu', 'Anggota Konsumsi', 'Slide Individu/KONSUM/MELAN.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/KONSUM/MELAN.jpg" class="panitia-media" alt="Melani Pasaribu"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Melani Pasaribu</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Maria Bellen Pakpahan', 'Anggota Konsumsi', 'Slide Individu/KONSUM/BELEN.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/KONSUM/BELEN.jpg" class="panitia-media" alt="Maria Bellen Pakpahan"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Maria Bellen Pakpahan</div>
+          </div>
+        </div>
+
+        <!-- 10. HUMAS -->
+        <div class="panitia-tier-title"><i class="fa-solid fa-bullhorn"></i> Hubungan Masyarakat (Humas)</div>
+        <div class="panitia-grid-1" style="margin-bottom: 10px;">
+          <div class="panitia-card" onclick="openMediaModal('Buena Viki Sirait', 'Koordinator Humas', 'Slide Individu/HUMAS/VICKY.mp4', 'video')">
+            <div class="panitia-avatar-wrapper">
+              <img src="Slide Individu/HUMAS/VICKY.jpg" class="panitia-media" alt="Buena Viki Sirait">
+              <span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span>
+            </div>
+            <div class="panitia-role">Koordinator</div>
+            <div class="panitia-name">Buena Viki Sirait</div>
+          </div>
+        </div>
+        <div class="panitia-grid-2">
+          <div class="panitia-card" onclick="openMediaModal('Stefany Pangaribuan', 'Anggota Humas', 'Slide Individu/HUMAS/STEFANY.mp4', 'video')">
+            <div class="panitia-avatar-wrapper"><img src="Slide Individu/HUMAS/STEFANY.jpg" class="panitia-media" alt="Stefany Pangaribuan"><span class="panitia-zoom-badge"><i class="fa-solid fa-play"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Stefany Pangaribuan</div>
+          </div>
+          <div class="panitia-card" onclick="openMediaModal('Desmond Sinaga', 'Anggota Humas', '', 'avatar')">
+            <div class="panitia-avatar-wrapper"><img src="" data-gender="male" class="panitia-media default-avatar" alt="Desmond Sinaga"><span class="panitia-zoom-badge"><i class="fa-solid fa-user"></i></span></div>
+            <div class="panitia-role">Anggota</div>
+            <div class="panitia-name">Desmond Sinaga</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           OUR GALLERY (CONTINUOUS RIGHT-SCROLLING MARQUEE SHOWCASE)
+      ========================================================== -->
+      <section id="gallery-section" class="glass-card" style="position: relative;">
+        <!-- Hiasan Rumbai-Rumbai Natal Emas Our Gallery -->
+        <div class="rumbai-garland-wrap">
+          <svg class="rumbai-svg" viewBox="0 0 500 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,0 Q 80,30 160,4 Q 250,32 340,4 Q 420,30 500,0" fill="none" stroke="url(#rumbaiGoldGrad)" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M 0,4 Q 80,34 160,8 Q 250,36 340,8 Q 420,34 500,4" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+          </svg>
+          <div class="rumbai-tassels-row">
+            <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+            <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+            <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+            <div class="rumbai-tassel"><div class="tassel-knot"></div><div class="tassel-fringe"></div></div>
+          </div>
+        </div>
+
+        <!-- Hanging Christmas Ornaments -->
+        <div class="hanging-ornaments" style="height: 60px;">
+          <div class="ornament"><div class="ornament-string"></div><div class="ornament-ball"></div></div>
+          <div class="ornament"><div class="ornament-string long"></div><div class="ornament-ball gold"></div></div>
+          <div class="ornament"><div class="ornament-string short"></div><div class="ornament-ball silver"></div></div>
+        </div>
+
+        <div class="section-header" style="margin-top: 10px;">
+          <div class="gallery-title-script">
+            <span class="glitter-sparkle">✦</span> 
+            <span class="glitter-text-red">Our Gallery</span> 
+            <span class="glitter-sparkle delayed">✦</span>
+          </div>
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> DOKUMENTASI ANIMASI PANITIA <span class="glitter-sparkle delayed">✦</span></div>
+          <div class="section-divider"></div>
+          <p style="font-size: 0.8rem; color: #736442; margin-top: 6px;">
+            Animasi slide seluruh panitia bergerak terus ke kanan &bull; Ketuk untuk menonton
+          </p>
+        </div>
+
+        <!-- Continuous Smooth Marquee Track Moving to the Right -->
+        <div class="marquee-wrapper">
+          <div class="marquee-track" id="gallery-marquee-track">
+            <!-- Dynamically populated and cloned for seamless infinite loop -->
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           KIRIM KATA-KATA, UCAPAN & DOA (KESAN & PESAN)
+      ========================================================== -->
+      <section id="pesan-section" class="glass-card">
+        <div class="section-header">
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> DOA & HARAPAN <span class="glitter-sparkle delayed">✦</span></div>
+          <h3 class="section-title"><span class="glitter-text-gold">Kesan, Pesan & Doa</span></h3>
+          <div class="section-divider"></div>
+          <p style="font-size: 0.82rem; color: #6E613F; margin-top: 6px;">
+            Sampaikan kata-kata mutiara, doa, maupun harapan Anda untuk Natal Remaja-Naposobulung HKBP Efrata Driyorejo 2026.
+          </p>
+        </div>
+
+        <form id="form-wish">
+          <div class="input-group">
+            <label class="input-label" for="wish-name">Nama Anda / Kelompok / Keluarga</label>
+            <input type="text" id="wish-name" class="input-control" placeholder="Contoh: Naposo Sidoarjo / Kel. St. Sihombing" required>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" for="wish-text">Pesan / Doa / Kata-kata Mutiara</label>
+            <textarea id="wish-text" class="input-control" placeholder="Tuliskan ucapan dan sukacita natal di sini..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit-wish">
+            <i class="fa-regular fa-paper-plane" style="margin-right: 6px;"></i> Kirim Ucapan & Doa
+          </button>
+        </form>
+
+        <!-- Live Feed Ucapan -->
+        <div id="wishes-feed" class="wishes-container">
+          <!-- Rendered via JS -->
+        </div>
+      </section>
+
+      <!-- =========================================================
+           KONFIRMASI KEHADIRAN (RSVP WHATSAPP)
+      ========================================================== -->
+      <section class="glass-card">
+        <div class="section-header">
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> KONFIRMASI KEHADIRAN <span class="glitter-sparkle delayed">✦</span></div>
+          <h3 class="section-title"><span class="glitter-text-gold">RSVP Tamu Undangan</span></h3>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label">Status Kehadiran</label>
+          <div class="rsvp-radio-group">
+            <label class="rsvp-radio-label">
+              <input type="radio" name="rsvp_status" value="Hadir" checked>
+              <i class="fa-regular fa-circle-check" style="margin-right: 3px;"></i> Hadir
+            </label>
+            <label class="rsvp-radio-label">
+              <input type="radio" name="rsvp_status" value="Masih Ragu">
+              <i class="fa-regular fa-circle-question" style="margin-right: 3px;"></i> Masih Ragu
+            </label>
+            <label class="rsvp-radio-label">
+              <input type="radio" name="rsvp_status" value="Berhalangan">
+              <i class="fa-regular fa-circle-xmark" style="margin-right: 3px;"></i> Maaf Belum Bisa
+            </label>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label" for="rsvp-count">Jumlah Yang Akan Hadir (Orang)</label>
+          <input type="number" id="rsvp-count" class="input-control" min="1" max="50" value="1">
+        </div>
+
+        <button id="btn-send-rsvp-wa" class="btn-action btn-primary" style="width: 100%; padding: 13px;">
+          <i class="fa-brands fa-whatsapp" style="font-size: 1.15rem;"></i> Konfirmasi via WhatsApp Panitia
+        </button>
+      </section>
+
+      <!-- PENUTUP & KATA TERIMA KASIH -->
+      <section class="glass-card" style="text-align: center;">
+        <div class="section-header">
+          <div class="section-subtitle"><span class="glitter-sparkle">✦</span> KASIH KARUNIA ALLAH MENYERTAI KITA <span class="glitter-sparkle delayed">✦</span></div>
+          <h3 class="section-title"><span class="glitter-text-gold">Sampai Jumpa di Perayaan Natal</span></h3>
+          <div class="section-divider"></div>
+        </div>
+        <p style="font-size: 0.88rem; color: #574B2A; line-height: 1.6; margin-bottom: 16px;">
+          Kehadiran dan doa restu Saudara/i sekalian merupakan kehormatan serta sukacita yang besar bagi kami seluruh Panitia & Remaja-Naposobulung HKBP Efrata Driyorejo.
+        </p>
+        <div class="script-font" style="font-size: 2.3rem; font-weight: 700;">
+          <span class="glitter-text-gold">Tuhan Yesus Memberkati Kita Semua</span>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+      <div class="footer-decor"><i class="fa-solid fa-star-of-life"></i></div>
+      <div style="font-weight: 800; color: #382B05; margin-bottom: 4px;">
+        Panitia Natal Remaja - Naposobulung 2026
+      </div>
+      <div>HKBP Efrata Driyorejo, Ressort Diaspora Surabaya</div>
+      
+      <!-- PARK PHA AHN.GROUP SIGNATURE CREDIT -->
+      <div class="brand-footer-box">
+        <span style="font-size: 0.78rem; font-weight: 700; color: #6E5300;">
+          Designed & Produced by <b>park pha Ahn.Group</b>
+        </span>
+      </div>
+
+      <div style="font-size: 0.72rem; color: #9E8F67; margin-top: 10px;">
+        Dibuat dengan kasih dan sukacita natal &bull; Driyorejo 2026
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- =============================================================
+       LUXURY GLASSMORPHISM BOTTOM NAVIGATION BAR (SCREENSHOT 4 FIX)
+  ============================================================== -->
+  <nav class="bottom-nav-bar">
+    <a href="#hero-section" class="nav-btn active" title="Beranda">
+      <i class="fa-solid fa-house"></i>
+    </a>
+    <a href="#panitia-section" class="nav-btn" title="Panitia">
+      <i class="fa-solid fa-users"></i>
+    </a>
+    <a href="#gallery-section" class="nav-btn" title="Our Gallery">
+      <i class="fa-solid fa-images"></i>
+    </a>
+    <a href="#lokasi-section" class="nav-btn" title="Lokasi">
+      <i class="fa-solid fa-map-location-dot"></i>
+    </a>
+    <button id="nav-music-toggle" class="nav-btn music-btn" title="Putar / Jeda Musik">
+      <i class="fa-solid fa-music"></i>
+    </button>
+  </nav>
+
+  <!-- =============================================================
+       MEDIA LIGHTBOX MODAL (FULL 4:5 SLIDE VIDEO & IMAGE VIEW)
+  ============================================================== -->
+  <div id="media-lightbox" onclick="closeMediaModal(event)">
+    <div class="lightbox-content">
+      <button class="btn-close-popup" onclick="closeMediaModalDirect()" style="top:12px; right:12px;" title="Tutup">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="lightbox-media-wrapper" id="lightbox-container">
+        <!-- Rendered dynamically as <video> or <img> in full 4:5 slide format -->
+      </div>
+
+      <div id="lightbox-role" class="lightbox-role">JABATAN</div>
+      <h3 id="lightbox-name" class="lightbox-name">Nama Panitia</h3>
+      
+      <div style="font-size: 0.8rem; color: #6E613F; line-height: 1.5; margin-top: 6px;">
+        Natal Remaja - Naposobulung HKBP Efrata Driyorejo 2026
+      </div>
+      <button onclick="closeMediaModalDirect()" class="btn-action btn-primary" style="margin-top: 16px; width: 100%;">
+        Tutup Tampilan
+      </button>
+    </div>
+  </div>
+
+  <!-- =============================================================
+       JAVASCRIPT LOGIC & INTERACTIONS
+  ============================================================== -->
+  <script>
+    /* 1. GET RECIPIENT FROM URL PARAMETER (?to=Nama atau ?p=Nama) */
+    function getRecipientName() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const recipient = urlParams.get('to') || urlParams.get('p') || urlParams.get('nama') || urlParams.get('kpd');
+      return recipient ? decodeURIComponent(recipient.replace(/\+/g, ' ')) : 'Tamu Undangan & Rekan Terkasih';
+    }
+
+    const recipientName = getRecipientName();
+    const recipientSpan = document.querySelector('#display-recipient .glitter-text-gold') || document.getElementById('display-recipient');
+    recipientSpan.textContent = recipientName;
+
+    /* 2. AUDIO & GATE INTERACTION */
+    const audio = document.getElementById('audio-backsound');
+    const navMusicBtn = document.getElementById('nav-music-toggle');
+    const gateScreen = document.getElementById('gate-screen');
+    const grandPopupModal = document.getElementById('grand-popup-modal');
+    const btnOpen = document.getElementById('btn-open');
+    const btnCloseGrand = document.getElementById('btn-close-grand');
+    const btnExploreContent = document.getElementById('btn-explore-content');
+
+    let isPlaying = false;
+
+    function playAudio() {
+      audio.play().then(() => {
+        isPlaying = true;
+        navMusicBtn.classList.add('playing');
+      }).catch(err => {
+        console.warn('Autoplay blocked:', err);
+      });
+    }
+
+    function toggleAudio() {
+      if (isPlaying) {
+        audio.pause();
+        isPlaying = false;
+        navMusicBtn.classList.remove('playing');
+        navMusicBtn.innerHTML = '<i class="fa-solid fa-play"></i>';
+      } else {
+        audio.play().then(() => {
+          isPlaying = true;
+          navMusicBtn.classList.add('playing');
+          navMusicBtn.innerHTML = '<i class="fa-solid fa-music"></i>';
+        }).catch(e => console.error(e));
+      }
+    }
+
+    navMusicBtn.addEventListener('click', toggleAudio);
+
+    btnOpen.addEventListener('click', () => {
+      playAudio();
+      gateScreen.classList.add('opened');
+
+      setTimeout(() => {
+        grandPopupModal.classList.add('show');
+      }, 550);
+    });
+
+    btnCloseGrand.addEventListener('click', () => {
+      grandPopupModal.classList.remove('show');
+    });
+
+    btnExploreContent.addEventListener('click', () => {
+      grandPopupModal.classList.remove('show');
+      window.scrollTo({ top: 380, behavior: 'smooth' });
+    });
+
+    /* 3. GENERATE LUXURY GOLDEN AVATARS FOR FALLBACKS */
+    function createAvatarSVG(name, gender) {
+      const words = name.trim().split(' ').filter(w => !['S.Th', 'St.', 'M', 'Cln.Pdt.', 'Cln.'].includes(w));
+      const initials = (words[0] ? words[0][0] : 'N') + (words[1] ? words[1][0] : 'P');
+      
+      const maleGradient = ['#FFE885', '#F5CD47', '#C69200'];
+      const femaleGradient = ['#FFF3B8', '#FFDF70', '#D4AF37'];
+      const colors = gender === 'female' ? femaleGradient : maleGradient;
+
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+          <defs>
+            <radialGradient id="bg-${initials}-${gender}" cx="40%" cy="30%" r="70%">
+              <stop offset="0%" stop-color="${colors[0]}"/>
+              <stop offset="60%" stop-color="${colors[1]}"/>
+              <stop offset="100%" stop-color="${colors[2]}"/>
+            </radialGradient>
+          </defs>
+          <circle cx="60" cy="60" r="58" fill="url(#bg-${initials}-${gender})" stroke="#FFFFFF" stroke-width="2"/>
+          <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.6)" stroke-dasharray="3,3"/>
+          <text x="60" y="70" font-family="'Cinzel', serif" font-size="34" font-weight="900" fill="#3D2B00" text-anchor="middle">${initials}</text>
+        </svg>
+      `;
+      return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    }
+
+    document.querySelectorAll('.default-avatar').forEach(img => {
+      const name = img.closest('.panitia-card').querySelector('.panitia-name').textContent;
+      const gender = img.dataset.gender || 'male';
+      img.src = createAvatarSVG(name, gender);
+    });
+
+    /* 4. COMMITTEE DATA LIST (DENGAN PEMBINA & PEMBIMBING NAPOSO) */
+    const committeeList = [
+      { name: "Pdt. Jhon Rikardo Klamer Siregar, S.Th", role: "Pembina", img: "Slide Individu/PEMBINA/JHON.jpeg", video: "", type: "image", gender: "male" },
+      { name: "St. R. Sihombing", role: "Inang St Dewan Koinonia", img: "Slide Individu/PEMBINA/St. R Sihombing.jpeg", video: "", type: "image", gender: "female" },
+      { name: "Cln. Pdt. Carel Hot A. Siburian", role: "Pembimbing Naposo", img: "Slide Individu/PEMBINA/Cln.Pdt. Carel Hot A. Siburian.jpeg", video: "", type: "image", gender: "male" },
+      { name: "Rafly Andreas Sitorus", role: "Ketua Pelaksana", img: "Slide Individu/BPI/RAFLY.jpg", video: "Slide Individu/BPI/RAFLY.mp4", type: "video", gender: "male" },
+      { name: "Salomo Fransiskus Pakpahan", role: "Wakil Pelaksana", img: "Slide Individu/BPI/SALOMO.jpg", video: "Slide Individu/BPI/SALOMO.mp4", type: "video", gender: "male" },
+      { name: "Dyna Evadyllya Panjaitan", role: "Sekretaris", img: "Slide Individu/BPI/DYNA.jpg", video: "Slide Individu/BPI/DYNA.mp4", type: "video", gender: "female" },
+      { name: "Maysela Benediktus Pakpahan", role: "Bendahara", img: "Slide Individu/BPI/SELA.jpg", video: "Slide Individu/BPI/SELA.mp4", type: "video", gender: "female" },
+      { name: "Ayu Paune Yuliana Pakpahan", role: "Koor. Acara", img: "Slide Individu/ACARA/AYU KOOR.jpg", video: "Slide Individu/ACARA/AYU KOOR.mp4", type: "video", gender: "female" },
+      { name: "Milka Rosabella M Pakpahan", role: "Sie Acara", img: "Slide Individu/ACARA/BELLA.jpg", video: "Slide Individu/ACARA/BELLA.mp4", type: "video", gender: "female" },
+      { name: "Stefani Panjaitan", role: "Sie Acara", img: "Slide Individu/ACARA/STEFANI.jpg", video: "Slide Individu/ACARA/STEFANI.mp4", type: "video", gender: "female" },
+      { name: "Maria Ermauli Lumbanraja", role: "Sie Acara", img: "Slide Individu/ACARA/MARIA.jpg", video: "Slide Individu/ACARA/MARIA.mp4", type: "video", gender: "female" },
+      { name: "Sri Duma Hutahaean", role: "Sie Acara", img: "Slide Individu/ACARA/DUMA.jpg", video: "Slide Individu/ACARA/DUMA.mp4", type: "video", gender: "female" },
+      { name: "Ivana Belinda Pakpahan", role: "Koor. Musik", img: "Slide Individu/MUSIK/IVANA.jpg", video: "Slide Individu/MUSIK/IVANA.mp4", type: "video", gender: "female" },
+      { name: "Vany Panjaitan", role: "Musik & Koor", img: "Slide Individu/MUSIK/VANY.jpg", video: "Slide Individu/MUSIK/VANY.mp4", type: "video", gender: "female" },
+      { name: "Boy Aritonang", role: "Musik & Koor", img: "Slide Individu/MUSIK/BOY.jpg", video: "Slide Individu/MUSIK/BOY.mp4", type: "video", gender: "male" },
+      { name: "Paulus Panjaitan", role: "Musik & Koor", img: "Slide Individu/MUSIK/PAULUS.jpg", video: "Slide Individu/MUSIK/PAULUS.mp4", type: "video", gender: "male" },
+      { name: "Jonathan Sormin", role: "Koor. PDD", img: "Slide Individu/PDD/JONATHAN.jpg", video: "Slide Individu/PDD/JONATHAN.mp4", type: "video", gender: "male" },
+      { name: "Netta Gultom", role: "Sie PDD", img: "Slide Individu/PDD/NETHA.jpg", video: "Slide Individu/PDD/NETHA.mp4", type: "video", gender: "female" },
+      { name: "Gunawan Pasaribu", role: "Koor. Perkap", img: "Slide Individu/PERKAP/GUNAWAN.jpg", video: "Slide Individu/PERKAP/GUNAWAN.mp4", type: "video", gender: "male" },
+      { name: "Josafat Pangaribuan", role: "Perlengkapan", img: "Slide Individu/PERKAP/YOSAFAT.jpg", video: "Slide Individu/PERKAP/YOSAFAT.mp4", type: "video", gender: "male" },
+      { name: "Brando Lumbanraja", role: "Perlengkapan", img: "Slide Individu/PERKAP/BRANDO.jpg", video: "Slide Individu/PERKAP/BRANDO.%20mp4", type: "video", gender: "male" },
+      { name: "Josua Hutahaean", role: "Perlengkapan", img: "Slide Individu/PERKAP/JOSUA.jpg", video: "Slide Individu/PERKAP/JOSUA.mp4", type: "video", gender: "male" },
+      { name: "Daniel Panjaitan", role: "Perlengkapan", img: "Slide Individu/PERKAP/DANIEL.jpg", video: "Slide Individu/PERKAP/DANIEL.mp4", type: "video", gender: "male" },
+      { name: "Karlam Sinaga", role: "Koor. Danus", img: "Slide Individu/DANUS/KARL,AM.jpg", video: "Slide Individu/DANUS/KARL,AM.mp4", type: "video", gender: "male" },
+      { name: "Larissa Simangunsong", role: "Dana & Usaha", img: "Slide Individu/DANUS/LARISSA.jpg", video: "Slide Individu/DANUS/LARISSA.mp4", type: "video", gender: "female" },
+      { name: "Naomi Panggabean", role: "Dana & Usaha", img: "Slide Individu/DANUS/NAOMI.jpg", video: "Slide Individu/DANUS/NAOMI.mp4", type: "video", gender: "female" },
+      { name: "Cristina Tampubolon", role: "Dana & Usaha", img: "Slide Individu/DANUS/CRISTINA.jpg", video: "Slide Individu/DANUS/CRISTINA.mp4", type: "video", gender: "female" },
+      { name: "Brykson Lumbanraja", role: "Koor. Konsumsi", img: "Slide Individu/KONSUM/BRYKSON.jpg", video: "Slide Individu/KONSUM/BRYKSON.mp4", type: "video", gender: "male" },
+      { name: "Ferdinand Simangunsong", role: "Konsumsi", img: "Slide Individu/KONSUM/FERDINAN.jpg", video: "Slide Individu/KONSUM/FERDINAN.mp4", type: "video", gender: "male" },
+      { name: "Melani Pasaribu", role: "Konsumsi", img: "Slide Individu/KONSUM/MELAN.jpg", video: "Slide Individu/KONSUM/MELAN.mp4", type: "video", gender: "female" },
+      { name: "Maria Bellen Pakpahan", role: "Konsumsi", img: "Slide Individu/KONSUM/BELEN.jpg", video: "Slide Individu/KONSUM/BELEN.mp4", type: "video", gender: "female" },
+      { name: "Buena Viki Sirait", role: "Koor. Humas", img: "Slide Individu/HUMAS/VICKY.jpg", video: "Slide Individu/HUMAS/VICKY.mp4", type: "video", gender: "female" },
+      { name: "Stefany Pangaribuan", role: "Humas", img: "Slide Individu/HUMAS/STEFANY.jpg", video: "Slide Individu/HUMAS/STEFANY.mp4", type: "video", gender: "female" },
+      { name: "Desmond Sinaga", role: "Humas", img: "", video: "", type: "avatar", gender: "male" }
+    ];
+
+    // Populate Marquee Track with Real Photos & cloned for seamless infinite right scroll
+    const marqueeTrack = document.getElementById('gallery-marquee-track');
+    function generateMarqueeCards(items) {
+      return items.map(item => {
+        const avatarSrc = item.img ? item.img : createAvatarSVG(item.name, item.gender);
+        const modalMedia = item.type === 'video' ? item.video : item.img;
+        const iconClass = item.type === 'video' ? 'fa-play' : 'fa-image';
+        return `
+          <div class="marquee-slide-card" onclick="openMediaModal('${escapeHtml(item.name)}', '${escapeHtml(item.role)}', '${modalMedia}', '${item.type}')">
+            <div class="marquee-avatar">
+              <img src="${avatarSrc}" alt="${escapeHtml(item.name)}">
+              <span class="marquee-play-icon"><i class="fa-solid ${iconClass}"></i></span>
+            </div>
+            <div class="marquee-name">${escapeHtml(item.name)}</div>
+            <div class="marquee-badge">${escapeHtml(item.role)}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Render twice to achieve seamless loop
+    marqueeTrack.innerHTML = generateMarqueeCards(committeeList) + generateMarqueeCards(committeeList);
+
+    /* 5. MEDIA LIGHTBOX (HANDLES FULL 4:5 SLIDE VIDEO & IMAGES) */
+    const mediaLightbox = document.getElementById('media-lightbox');
+    const lightboxContainer = document.getElementById('lightbox-container');
+    const lightboxRole = document.getElementById('lightbox-role');
+    const lightboxName = document.getElementById('lightbox-name');
+
+    function openMediaModal(name, role, src, type) {
+      lightboxName.textContent = name;
+      lightboxRole.textContent = role;
+      lightboxContainer.innerHTML = '';
+
+      if (type === 'video' && src) {
+        const video = document.createElement('video');
+        video.src = src;
+        video.autoplay = true;
+        video.loop = true;
+        video.muted = false;
+        video.playsInline = true;
+        video.controls = false;
+        video.className = 'lightbox-media-inner';
+        lightboxContainer.appendChild(video);
+      } else if (type === 'image' && src) {
+        const img = document.createElement('img');
+        img.src = src;
+        img.className = 'lightbox-media-inner';
+        img.alt = name;
+        lightboxContainer.appendChild(img);
+      } else {
+        const img = document.createElement('img');
+        img.src = createAvatarSVG(name, 'male');
+        img.className = 'lightbox-media-inner';
+        lightboxContainer.appendChild(img);
+      }
+
+      mediaLightbox.classList.add('active');
+    }
+
+    function closeMediaModal(e) {
+      if (e.target === mediaLightbox) {
+        closeMediaModalDirect();
+      }
+    }
+    function closeMediaModalDirect() {
+      const v = lightboxContainer.querySelector('video');
+      if (v) v.pause();
+      mediaLightbox.classList.remove('active');
+    }
+
+    /* 6. COUNTDOWN TIMER TO 20 DESEMBER 2026, 16:30 WIB */
+    function updateCountdown() {
+      const eventTime = new Date('2026-12-20T16:30:00+07:00').getTime();
+      const now = new Date().getTime();
+      const diff = eventTime - now;
+
+      if (diff <= 0) {
+        document.getElementById('cd-days').textContent = '00';
+        document.getElementById('cd-hours').textContent = '00';
+        document.getElementById('cd-minutes').textContent = '00';
+        document.getElementById('cd-seconds').textContent = '00';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+      document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('cd-seconds').textContent = String(seconds).padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    /* 7. ADD TO CALENDAR BUTTON */
+    document.getElementById('btn-add-calendar').addEventListener('click', () => {
+      const title = encodeURIComponent("Natal Remaja - Naposobulung HKBP Efrata Driyorejo 2026");
+      const details = encodeURIComponent('Tema: "Terang di Tengah Kegelapan." (Yohanes 1:5)\nSubtema: "Remaja dan Naposo Berakar dalam Kristus dan Bertumbuh dalam Terang-Nya di Tengah Kegelapan Zaman"');
+      const location = encodeURIComponent("HKBP Efrata Driyorejo");
+      const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261220T093000Z/20261220T143000Z&details=${details}&location=${location}`;
+      window.open(gcalUrl, '_blank');
+    });
+
+    /* 8. GUESTBOOK / UCAPAN & DOA (LOCALSTORAGE INTEGRATION) */
+    const formWish = document.getElementById('form-wish');
+    const wishesFeed = document.getElementById('wishes-feed');
+
+    const defaultWishes = [
+      {
+        sender: "Pdt. Jhon Rikardo Klamer Siregar, S.Th",
+        message: "Selamat mempersiapkan dan menyambut Natal Kristus bagi seluruh Remaja-Naposobulung HKBP Efrata Driyorejo. Jadilah terang yang memancarkan kemuliaan Tuhan!",
+        time: "Baru saja"
+      },
+      {
+        sender: "St. R. Sihombing",
+        message: "Damai sukacita Natal melingkupi setiap panitia dan jemaat. Tetap semangat melayani Tuhan dengan segenap hati dan ketulusan.",
+        time: "1 jam yang lalu"
+      },
+      {
+        sender: "Cln. Pdt. Carel Hot A. Siburian",
+        message: "Biarlah terang Kristus senantiasa menuntun Remaja dan Naposo untuk terus bertumbuh dalam iman dan kasih persaudaraan.",
+        time: "2 jam yang lalu"
+      },
+      {
+        sender: "Panitia Pelaksana & park pha Ahn.Group",
+        message: "Kami menantikan kehadiran rekan-rekan dan saudara-saudari terkasih. Mari kita bersama memuliakan nama Tuhan dalam sukacita Natal!",
+        time: "3 jam yang lalu"
+      }
+    ];
+
+    function getSavedWishes() {
+      const stored = localStorage.getItem('hkbp_natal_wishes_2026');
+      return stored ? JSON.parse(stored) : defaultWishes;
+    }
+
+    function renderWishes() {
+      const wishes = getSavedWishes();
+      wishesFeed.innerHTML = wishes.map(w => `
+        <div class="wish-item">
+          <div class="wish-header">
+            <span class="wish-sender"><i class="fa-regular fa-user" style="color: #8C6500; margin-right: 5px;"></i> ${escapeHtml(w.sender)}</span>
+            <span class="wish-time">${escapeHtml(w.time)}</span>
+          </div>
+          <div class="wish-message">${escapeHtml(w.message)}</div>
+        </div>
+      `).join('');
+    }
+
+    function escapeHtml(text) {
+      const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
+      return text.replace(/[&<>"']/g, m => map[m]);
+    }
+
+    formWish.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nameInput = document.getElementById('wish-name');
+      const textInput = document.getElementById('wish-text');
+
+      const newWish = {
+        sender: nameInput.value.trim(),
+        message: textInput.value.trim(),
+        time: "Baru saja"
+      };
+
+      const wishes = getSavedWishes();
+      wishes.unshift(newWish);
+      localStorage.setItem('hkbp_natal_wishes_2026', JSON.stringify(wishes));
+      renderWishes();
+
+      nameInput.value = '';
+      textInput.value = '';
+      alert('Terima kasih! Kesan, pesan dan doa Anda telah tersampaikan.');
+    });
+
+    renderWishes();
+
+    /* 9. RSVP VIA WHATSAPP PANITIA */
+    document.getElementById('btn-send-rsvp-wa').addEventListener('click', () => {
+      const status = document.querySelector('input[name="rsvp_status"]:checked').value;
+      const count = document.getElementById('rsvp-count').value || '1';
+      const guest = recipientName;
+
+      const message = `Halo Panitia Natal Remaja-Naposobulung HKBP Efrata Driyorejo 2026,%0A%0ASaya atas nama: *${encodeURIComponent(guest)}*%0AKonfirmasi Kehadiran: *${encodeURIComponent(status)}*%0AJumlah Tamu: *${count} Orang*%0A%0ATerima kasih, Syalom & Tuhan Yesus Memberkati!`;
+      
+      window.open(`https://wa.me/?text=${message}`, '_blank');
+    });
+
+    /* =============================================================
+       10. ENHANCED PARTICLES CANVAS: GOLDEN GLITTERS, 4-POINT STARS & SNOW
+    ============================================================== */
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener('resize', () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    const particles = [];
+    const numParticles = 55;
+
+    for (let i = 0; i < numParticles; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        size: Math.random() * 3 + 1.2,
+        color: ['#FFE885', '#FFF2A8', '#FFFFFF', '#F5CD47', '#E6B800'][Math.floor(Math.random() * 5)],
+        speedY: Math.random() * 0.75 + 0.35,
+        speedX: (Math.random() - 0.5) * 0.45,
+        alpha: Math.random() * 0.7 + 0.3,
+        pulseSpeed: Math.random() * 0.035 + 0.015,
+        type: Math.random() > 0.45 ? 'star' : 'snow'
+      });
+    }
+
+    function drawSparkleStar(ctx, cx, cy, spikes, outerRadius, innerRadius, color, alpha) {
+      let rot = Math.PI / 2 * 3;
+      let x = cx;
+      let y = cy;
+      const step = Math.PI / spikes;
+
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = color;
+      ctx.shadowBlur = outerRadius * 2.2;
+      ctx.shadowColor = color;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy - outerRadius);
+
+      for (let i = 0; i < spikes; i++) {
+        x = cx + Math.cos(rot) * outerRadius;
+        y = cy + Math.sin(rot) * outerRadius;
+        ctx.lineTo(x, y);
+        rot += step;
+
+        x = cx + Math.cos(rot) * innerRadius;
+        y = cy + Math.sin(rot) * innerRadius;
+        ctx.lineTo(x, y);
+        rot += step;
+      }
+      ctx.lineTo(cx, cy - outerRadius);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, width, height);
+
+      particles.forEach(p => {
+        p.y += p.speedY;
+        p.x += p.speedX;
+        p.alpha += Math.sin(Date.now() * p.pulseSpeed) * 0.02;
+
+        if (p.y > height) {
+          p.y = -10;
+          p.x = Math.random() * width;
+        }
+        if (p.x > width) p.x = 0;
+        if (p.x < 0) p.x = width;
+
+        const currentAlpha = Math.max(0.12, Math.min(0.95, p.alpha));
+
+        if (p.type === 'star') {
+          drawSparkleStar(ctx, p.x, p.y, 4, p.size * 2.4, p.size * 0.5, p.color, currentAlpha);
+        } else {
+          ctx.save();
+          ctx.globalAlpha = currentAlpha;
+          ctx.fillStyle = p.color;
+          ctx.shadowBlur = 6;
+          ctx.shadowColor = p.color;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+      });
+
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+  </script>
+</body>
+</html>
